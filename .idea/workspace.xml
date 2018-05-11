@@ -1,7 +1,397 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3290344-ad2e-4a7f-9bc9-688afc7cdf51" name="Default" comment="" />
+    <list default="true" id="c3290344-ad2e-4a7f-9bc9-688afc7cdf51" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/Item.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/new_stuff.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/10.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/100.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/101.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/102.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/103.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/104.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/105.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/106.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/107.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/108.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/109.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/11.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/110.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/111.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/112.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/113.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/114.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/115.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/116.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/117.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/118.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/119.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/12.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/120.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/121.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/122.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/123.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/124.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/125.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/126.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/127.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/128.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/129.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/13.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/130.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/131.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/132.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/133.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/134.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/135.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/136.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/137.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/138.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/139.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/14.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/140.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/141.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/142.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/143.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/144.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/145.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/146.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/147.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/148.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/149.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/15.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/150.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/151.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/152.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/153.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/154.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/155.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/156.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/157.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/158.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/159.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/16.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/160.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/161.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/162.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/163.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/164.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/165.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/166.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/167.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/168.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/169.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/17.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/170.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/171.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/172.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/173.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/174.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/175.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/176.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/177.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/178.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/179.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/18.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/180.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/181.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/182.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/183.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/184.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/185.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/186.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/187.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/188.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/189.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/19.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/190.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/191.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/20.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/21.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/22.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/23.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/24.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/25.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/26.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/27.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/28.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/29.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/30.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/31.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/32.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/33.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/34.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/35.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/36.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/37.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/38.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/39.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/40.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/41.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/42.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/43.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/44.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/45.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/46.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/47.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/48.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/49.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/50.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/51.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/52.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/53.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/54.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/55.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/56.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/57.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/58.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/59.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/60.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/61.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/62.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/63.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/64.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/65.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/66.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/67.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/68.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/69.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/7.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/70.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/71.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/72.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/73.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/74.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/75.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/76.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/77.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/78.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/79.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/8.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/80.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/81.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/82.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/83.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/84.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/85.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/86.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/87.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/88.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/89.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/9.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/90.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/91.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/92.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/93.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/94.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/95.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/96.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/97.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/98.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/source/99.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WakfuStuffs/__init__.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/new_stuff.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/10.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/100.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/101.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/102.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/103.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/104.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/105.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/106.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/107.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/108.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/109.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/11.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/110.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/111.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/112.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/113.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/114.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/115.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/116.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/117.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/118.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/119.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/12.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/120.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/121.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/122.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/123.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/124.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/125.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/126.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/127.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/128.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/129.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/13.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/130.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/131.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/132.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/133.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/134.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/135.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/136.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/137.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/138.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/139.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/14.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/140.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/141.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/142.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/143.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/144.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/145.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/146.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/147.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/148.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/149.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/15.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/150.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/151.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/152.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/153.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/154.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/155.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/156.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/157.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/158.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/159.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/16.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/160.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/161.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/162.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/163.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/164.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/165.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/166.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/167.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/168.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/169.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/17.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/170.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/171.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/172.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/173.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/174.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/175.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/176.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/177.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/178.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/179.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/18.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/180.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/181.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/182.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/183.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/184.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/185.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/186.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/187.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/188.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/189.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/19.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/190.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/191.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/20.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/21.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/22.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/23.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/24.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/25.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/26.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/27.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/28.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/29.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/30.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/31.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/32.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/33.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/34.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/35.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/36.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/37.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/38.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/39.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/40.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/41.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/42.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/43.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/44.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/45.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/46.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/47.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/48.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/49.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/5.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/50.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/51.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/52.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/53.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/54.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/55.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/56.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/57.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/58.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/59.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/6.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/60.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/61.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/62.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/63.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/64.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/65.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/66.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/67.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/68.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/69.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/7.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/70.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/71.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/72.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/73.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/74.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/75.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/76.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/77.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/78.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/79.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/8.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/80.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/81.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/82.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/83.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/84.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/85.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/86.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/87.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/88.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/89.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/9.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/90.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/91.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/92.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/93.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/94.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/95.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/96.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/97.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/98.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/source/99.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="ponynote.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -13,7 +403,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/WakfuStuffs$new_stuff.coverage" NAME="new_stuff Coverage Results" MODIFIED="1526053279905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs" />
+    <SUITE FILE_PATH="coverage/WakfuStuffs$new_stuff__1_.coverage" NAME="new_stuff (1) Coverage Results" MODIFIED="1526056297941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items" />
+    <SUITE FILE_PATH="coverage/WakfuStuffs$new_stuff.coverage" NAME="new_stuff Coverage Results" MODIFIED="1526055710101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -26,7 +417,7 @@
     <favorites_list name="ponynote" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,6 +454,8 @@
         <option value="$PROJECT_DIR$/WakfuStuffs/stuffs/admin.py" />
         <option value="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/urls.py" />
         <option value="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/new_stuff.py" />
+        <option value="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/Item.py" />
+        <option value="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/new_stuff.py" />
       </list>
     </option>
   </component>
@@ -71,6 +464,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/WakfuStuffs/frontend/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -85,7 +481,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -190,6 +586,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WakfuStuffs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WakfuStuffs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WakfuStuffs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WakfuStuffs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="import_items" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -208,7 +626,7 @@
       <recent name="C:\Users\Greenlamp\PycharmProjects\WakfuStuffs\WakfuStuffs\frontend\src\constants" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.new_stuff">
+  <component name="RunManager" selected="Python.new_stuff (1)">
     <configuration default="false" name="new_stuff" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -223,6 +641,24 @@
       <module name="WakfuStuffs" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/new_stuff.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="new_stuff (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="WakfuStuffs" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/new_stuff.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -462,8 +898,8 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
-        <env name="DJANGO_SETTINGS_MODULE" value="WakfuStuffs.settings" />
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="WakfuStuffs.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -482,13 +918,15 @@
       <option name="customRunCommand" value="" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Django server.WakfuStuffs" />
       <item index="1" class="java.lang.String" itemvalue="Python.new_stuff" />
+      <item index="2" class="java.lang.String" itemvalue="Python.new_stuff (1)" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.new_stuff" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.new_stuff (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.new_stuff" />
       </list>
     </recent_temporary>
   </component>
@@ -512,23 +950,23 @@
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31051344" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29645476" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39933628" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -544,7 +982,23 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/new_stuff.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="7" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -555,7 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="360" column="7" selection-start-line="360" selection-start-column="7" selection-end-line="360" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -563,7 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -571,7 +1023,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -587,7 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -595,7 +1045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="13" column="60" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -603,9 +1052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#22#31#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -613,7 +1059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -621,7 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -629,7 +1073,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -637,7 +1080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,7 +1087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -653,7 +1094,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -661,9 +1101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -671,9 +1108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#36#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -681,9 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -691,7 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -699,9 +1129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -709,7 +1136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -717,33 +1143,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WakfuStuffs/stuffs/serialiers">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/WakfuStuffs/stuffs/serialiers" />
     <entry file="file://$PROJECT_DIR$/WakfuStuffs/stuffs/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WakfuStuffs/stuffs/endpoints.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -759,7 +1166,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -767,7 +1173,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -775,7 +1180,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -783,9 +1187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -793,34 +1194,59 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WakfuStuffs/stuffs/api.py">
+    <entry file="file://$PROJECT_DIR$/WakfuStuffs/stuffs/endpoints.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#48#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WakfuStuffs/stuffs/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="102">
           <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/new_stuff.py">
+    <entry file="file://$PROJECT_DIR$/WakfuStuffs/stuffs/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/new_stuff.py" />
+    <entry file="file://$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/Item.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/tokenize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="453" column="0" selection-start-line="453" selection-start-column="0" selection-end-line="453" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/bs4/dammit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="314" column="0" selection-start-line="314" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/new_stuff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
