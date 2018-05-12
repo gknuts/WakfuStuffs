@@ -1,1 +1,1 @@
-export const TEST = 'TEST'
+export const FETCH_STUFFS = 'FETCH_STUFFS'

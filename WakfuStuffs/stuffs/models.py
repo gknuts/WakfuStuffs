@@ -3,7 +3,8 @@ from django.db import models
 
 class Stuff(models.Model):
     name = models.CharField(max_length=255)
+    quality = models.CharField(max_length=255)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.name
+        return self.name + " - " + self.quality
