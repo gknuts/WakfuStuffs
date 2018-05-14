@@ -2,15 +2,18 @@ import React, { Component } from 'react';
 import {Route, Switch, BrowserRouter} from 'react-router-dom';
 
 import { Provider } from "react-redux";
-import { createStore, applyMiddleware } from "redux";
-import thunk from "redux-thunk";
+import {createStore, applyMiddleware} from "redux";
 
 import wakfuApp from "./reducers";
 
 import WakfuStuffs from "./components/WakfuStuffs";
 import NotFound from "./components/NotFound";
+import thunk from "redux-thunk";
 
-let store = createStore(wakfuApp, applyMiddleware(thunk));
+let middlewares = [
+    thunk,
+]
+let store = createStore(wakfuApp, applyMiddleware(...middlewares));
 
 class App extends Component {
   render() {

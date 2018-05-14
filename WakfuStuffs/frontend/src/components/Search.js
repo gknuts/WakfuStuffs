@@ -4,8 +4,9 @@ import React from 'react';
 const Search = () => {
   return (
   <div>
+
   </div>
   )
 }
 
-export default NotFound
+export default Search
