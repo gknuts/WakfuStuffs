@@ -34,6 +34,7 @@ def get_items(source):
     for tr in trs:
         item = Item()
         linker = tr.find_all("span", attrs={"class": u"ak-linker"})
+        item.id_image = linker[0].img.get("src").split("/")[-1].split(".")[0]
         for link in linker:
             name = link.text
             if name is not "":
@@ -44,7 +45,6 @@ def get_items(source):
         if title == "":
             title = "Epique"
         item.quality = title
-
 
         type = tr.find("td", attrs={"class": u"item-type"})
         item.type = type.img.get("title")
@@ -59,8 +59,6 @@ def get_items(source):
 
         items.append(item)
         cpt += 1
-        if(cpt == 17):
-            break
 
     return items
 
@@ -71,7 +69,6 @@ def main():
         items = get_items(source)
         all_items = all_items + items
     payload = Item.getPayload(all_items)
-    print(len(str(payload))+len("http://localhost:8000/api/addstuff/"))
 
     requete = requests.post("http://localhost:8000/api/addstuff/", data=payload)
     print(requete.reason)

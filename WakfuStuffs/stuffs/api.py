@@ -63,23 +63,24 @@ class AddStuff(APIView):
         return Response(retour)
 
     def post(self, request, format=None):
-        print(len(str(request)))
         taille = int(request.data.get("count"))
         cpt = 0
         for i in range(0, taille):
             data = request.data.getlist(str(i))
 
             temp = {"name": "", "quality": "", "type": "", "niveau": "", "bonus": ""}
-            temp["name"] = data[0]
-            temp["quality"] = data[1]
-            temp["type"] = data[2]
-            temp["niveau"] = str(data[3])
-            temp["bonus"] = data[4]
+            temp["id_image"] = data[0]
+            temp["name"] = data[1]
+            temp["quality"] = data[2]
+            temp["type"] = data[3]
+            temp["niveau"] = str(data[4])
+            temp["bonus"] = data[5]
             serializer = StuffSerializer(data=temp)
-            print(serializer.is_valid())
             if serializer.is_valid():
                 serializer.save()
                 cpt+=1
+
+        print("{:d} added".format(cpt))
         if cpt == taille:
             return Response(status=status.HTTP_201_CREATED)
         else:
