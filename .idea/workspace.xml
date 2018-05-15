@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3290344-ad2e-4a7f-9bc9-688afc7cdf51" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/WakfuStuffs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WakfuStuffs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/Item.py" beforeDir="false" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/Item.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/new_stuff.py" beforeDir="false" afterPath="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/new_stuff.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WakfuStuffs/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/WakfuStuffs/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WakfuStuffs/frontend/src/components/Stuffs.js" beforeDir="false" afterPath="$PROJECT_DIR$/WakfuStuffs/frontend/src/components/Stuffs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WakfuStuffs/stuffs/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/WakfuStuffs/stuffs/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WakfuStuffs/stuffs/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/WakfuStuffs/stuffs/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WakfuStuffs/stuffs/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/WakfuStuffs/stuffs/serializers.py" afterDir="false" />
     </list>
     <ignored path="ponynote.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +18,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/WakfuStuffs$new_stuff.coverage" NAME="new_stuff Coverage Results" MODIFIED="1526124988938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs" />
     <SUITE FILE_PATH="coverage/WakfuStuffs$api.coverage" NAME="api Coverage Results" MODIFIED="1526164378620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WakfuStuffs/stuffs" />
-    <SUITE FILE_PATH="coverage/WakfuStuffs$new_stuff__1_.coverage" NAME="new_stuff (1) Coverage Results" MODIFIED="1526421964219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items" />
+    <SUITE FILE_PATH="coverage/WakfuStuffs$new_stuff__1_.coverage" NAME="new_stuff (1) Coverage Results" MODIFIED="1526423348823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -41,7 +31,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Stuffs.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Stuffs.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WakfuStuffs/frontend/src/components/Stuffs.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
@@ -53,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new_stuff.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="new_stuff.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/new_stuff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+            <state relative-caret-position="350">
+              <caret line="75" column="43" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -161,8 +151,8 @@
         <option value="$PROJECT_DIR$/WakfuStuffs/stuffs/models.py" />
         <option value="$PROJECT_DIR$/WakfuStuffs/stuffs/serializers.py" />
         <option value="$PROJECT_DIR$/WakfuStuffs/stuffs/api.py" />
-        <option value="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/new_stuff.py" />
         <option value="$PROJECT_DIR$/WakfuStuffs/frontend/src/components/Stuffs.js" />
+        <option value="$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/new_stuff.py" />
       </list>
     </option>
   </component>
@@ -601,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526317458172</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Parsing et ajout terminé">
+      <created>1526422937480</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1526422937480</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -613,8 +610,8 @@
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49511003" weight="0.32900432" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32964602" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49511003" weight="0.32900432" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49633253" visible="true" weight="0.32900432" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49511003" visible="true" weight="0.32900432" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49633253" weight="0.32900432" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27345416" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -648,7 +645,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ajout de la db dans le git" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout de la db dans le git" />
+    <MESSAGE value="Parsing et ajout terminé" />
+    <option name="LAST_COMMIT_MESSAGE" value="Parsing et ajout terminé" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -893,27 +891,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WakfuStuffs/stuffs/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WakfuStuffs/stuffs/api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
           <caret line="76" column="34" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WakfuStuffs/stuffs/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -924,22 +905,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/new_stuff.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WakfuStuffs/frontend/src/components/Stuffs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="82" selection-start-line="28" selection-start-column="82" selection-end-line="28" selection-end-column="82" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WakfuStuffs/stuffs/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WakfuStuffs/stuffs/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WakfuStuffs/WakfuStuffs/import_items/new_stuff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="75" column="43" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>

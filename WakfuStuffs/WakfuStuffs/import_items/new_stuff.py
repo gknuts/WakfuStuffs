@@ -62,16 +62,23 @@ def get_items(source):
 
     return items
 
+def split_list(alist, wanted_parts=1):
+    length = len(alist)
+    return [ alist[i*length // wanted_parts: (i+1)*length // wanted_parts]
+             for i in range(wanted_parts) ]
+
 def main():
-    sources = get_all_sources(1)
+    sources = get_all_sources(20)
     all_items = []
     for source in sources:
         items = get_items(source)
         all_items = all_items + items
-    payload = Item.getPayload(all_items)
+    tabs = split_list(all_items, 3)#pas sur
+    for tab in tabs:
+        payload = Item.getPayload(tab)
 
-    requete = requests.post("http://localhost:8000/api/addstuff/", data=payload)
-    print(requete.reason)
+        requete = requests.post("http://localhost:8000/api/addstuff/", data=payload)
+        print(requete.reason)
 
 def main2():
     for i in range(27, 72):
