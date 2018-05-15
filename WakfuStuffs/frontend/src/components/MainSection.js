@@ -1,11 +1,11 @@
 import React from 'react';
 import Stuffs from './Stuffs'
 
-const MainSection = ({fetchStuffs, stuffs}) =>(
+const MainSection = ({stuffs, actions, cpt}) =>(
       <div>
         <h2 align="center">Welcome to Wakfu Stuffs!</h2>
         <hr />
-        <Stuffs fetchStuffs={fetchStuffs} stuffs={stuffs}/>
+        <Stuffs stuffs={stuffs} actions={actions}/>
       </div>
 )
 export default MainSection

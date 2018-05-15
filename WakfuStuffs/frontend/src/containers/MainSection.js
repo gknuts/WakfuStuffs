@@ -1,6 +1,7 @@
 import {connect} from 'react-redux';
 import {wakfu} from '../actions';
 import MainSection from '../components/MainSection'
+import { bindActionCreators } from 'redux'
 
 const mapStateToProps = state => {
     return {
@@ -9,12 +10,8 @@ const mapStateToProps = state => {
     }
 }
 
-const mapDispatchToProps = dispatch => {
-  return {
-    fetchStuffs: () => {
-      dispatch(wakfu.fetchStuffs());
-    },
-  }
-}
+const mapDispatchToProps = dispatch => ({
+    actions: bindActionCreators(wakfu, dispatch)
+})
 
 export default connect(mapStateToProps, mapDispatchToProps)(MainSection);

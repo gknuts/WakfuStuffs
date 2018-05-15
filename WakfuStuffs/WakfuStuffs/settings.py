@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'stuffs.apps.StuffsConfig',
     'webpack_loader',
     'rest_framework',
-    'django_filters'
 ]
 
 MIDDLEWARE = [

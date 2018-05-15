@@ -1,3 +1,5 @@
+import * as types from "../constants/ActionTypes";
+
 const initialState = {
     stuffs: [],
     cpt: 0,
@@ -5,7 +7,7 @@ const initialState = {
 
 export default function wakfu(state=initialState, action) {
     switch(action.type){
-        case "FETCH_STUFFS":
+        case types.FETCH_STUFFS:
             return {
                 ...state,
             stuffs: action.stuffs
