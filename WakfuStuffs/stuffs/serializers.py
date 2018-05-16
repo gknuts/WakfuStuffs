@@ -14,13 +14,9 @@ class StuffSerializer(serializers.ModelSerializer):
         model = Stuff
         fields = ('id', 'id_image', 'name', 'quality', 'type', 'niveau', 'bonus', 'tags',)
 
-    """def create(self, validated_data):
-        order = Stuff.objects.get(pk=validated_data.pop('tags'))
-        instance = Stuff.objects.create(**validated_data)
-        Tag.objects.create(Order=order, Stuff=Stuff)
-        return instance
-
-    def to_representation(self, instance):
-        representation = super(StuffSerializer, self).to_representation(instance)
-        representation['tags'] = TagSerializer(instance.assigment_set.all(), many=True).data
-        return representation"""
+    def create(self, validated_data):
+        tags_data = validated_data.pop('tags')
+        stuff = Stuff.objects.create(**validated_data)
+        for tag_data in tags_data:
+            Tag.objects.create(stuff=stuff, **tag_data)
+        return stuff
