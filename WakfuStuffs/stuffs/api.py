@@ -1,5 +1,6 @@
 from rest_framework import status
 from rest_framework import viewsets, permissions
+from rest_framework.generics import DestroyAPIView
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework.views import APIView
@@ -85,3 +86,16 @@ class AddStuff(APIView):
             return Response(status=status.HTTP_201_CREATED)
         else:
             return Response(status=status.HTTP_400_BAD_REQUEST)
+
+class DeleteAllStuff(APIView):
+    permission_classes = [permissions.AllowAny, ]
+    serializer_class = StuffSerializer
+    queryset = Stuff.objects.all()
+
+    def get(self, request, format=None):
+        self.queryset.delete()
+        if len(Stuff.objects.all()) == 0:
+            return Response(status=status.HTTP_202_ACCEPTED)
+        else:
+            return Response(status=status.HTTP_400_BAD_REQUEST)
+
