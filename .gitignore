@@ -114,3 +114,6 @@ webpack-stats.prod.json
 # build files
 build/
 bundles/
+.idea/dataSources.local.xml
+.idea/workspace.xml
+./idea/*
