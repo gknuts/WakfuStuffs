@@ -78,7 +78,7 @@ def split_list(alist, wanted_items=160):
 
 
 def main():
-    sources = get_all_sources(20)
+    sources = get_all_sources(1)
     print(len(sources))
     all_items = []
     for source in sources:

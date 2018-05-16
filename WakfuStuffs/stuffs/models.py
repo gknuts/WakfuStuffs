@@ -12,3 +12,12 @@ class Stuff(models.Model):
 
     def __str__(self):
         return self.id_image + ": " + self.name + " - " + self.quality + " - " + self.type + " - " + self.niveau
+
+
+class Tag(models.Model):
+    name = models.CharField(max_length=255)
+    stuff = models.ForeignKey(Stuff, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.stuff.name + ": " + self.name
