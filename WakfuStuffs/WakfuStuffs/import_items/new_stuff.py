@@ -78,32 +78,18 @@ def split_list(alist, wanted_items=160):
 
 
 def main():
-    sources = get_all_sources(30)
+    sources = get_all_sources(20)
     print(len(sources))
     all_items = []
-    print("début fusion sources")
     for source in sources:
         items = get_items(source)
         all_items = all_items + items
-        if(len(all_items)>=136):
-            print("len:{:d}".format(len(all_items)))
-            payload = Item.getPayload(all_items)
-
-            requete = requests.post("http://localhost:8000/api/addstuff/", data=payload)
-            print(requete.reason)
-            all_items = []
-
-    print("fin fusion sources")
-    """print("début split")
     tabs = split_list(all_items, 160)
-    print(len(tabs))
-    print(len(tabs[0]))"""
-    """
+
     for tab in tabs:
         payload = Item.getPayload(tab)
-
         requete = requests.post("http://localhost:8000/api/addstuff/", data=payload)
-        print(requete.reason)"""
+        print(requete.reason)
 
 def main2():
     for i in range(27, 72):
