@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'rest_framework',
 ]
 
+DATA_UPLOAD_MAX_NUMBER_FIELDS = 10240
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

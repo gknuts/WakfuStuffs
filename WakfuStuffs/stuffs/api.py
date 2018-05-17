@@ -70,8 +70,14 @@ class AddStuff(APIView):
             temp["type"] = data[3]
             temp["niveau"] = str(data[4])
             temp["bonus"] = data[5]
+            temp["tags"] = []
+            if data[6] != "":
+                elms = data[6].split(";")
+                for elm in elms:
+                    temp["tags"].append({"name": elm})
             test.append(temp)
             serializer = StuffSerializer(data=temp)
+
             if serializer.is_valid():
                 cpt+=1
         serializer = StuffSerializer(data=test, many=True)

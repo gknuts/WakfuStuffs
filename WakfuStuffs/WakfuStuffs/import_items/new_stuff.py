@@ -3,12 +3,13 @@ import sys
 from bs4 import BeautifulSoup
 from math import ceil
 
-import WakfuStuffs
+from WakfuStuffs.WakfuStuffs.import_items.Cpt import Cpt
 from WakfuStuffs.WakfuStuffs.import_items.Item import Item
+
 
 def get_all_sources(number):
     sources = []
-    for i in range(0, number):
+    for i in range(188, 191):
         print("{:d}/191".format(i+1))
         filename= "source/{:d}.html".format(i+1)
         with open(filename, 'r', encoding='utf-8') as input:
@@ -25,14 +26,16 @@ def delete_item(id):
     request = "http://localhost:8000/api/stuffs/{:d}/".format(id)
     r = requests.delete(request)
 
-
-def get_items(source):
+def get_items(source, cpt):
     items = []
-
-    table = source.find("table", attrs={"class": u"ak-table ak-responsivetable"}).find("tbody")
+    table = source.find("table", attrs={"class": u"ak-table"})
+    if(table == None):
+        print(source.prettify())
+        pass
+    table = table.find("tbody")
     trs = table.find_all("tr")
-    cpt=0
     for tr in trs:
+        print("{:d}/4584".format(cpt.cpt))
         item = Item()
         linker = tr.find_all("span", attrs={"class": u"ak-linker"})
         item.id_image = linker[0].img.get("src").split("/")[-1].split(".")[0]
@@ -53,13 +56,18 @@ def get_items(source):
         bonuses = tr.find("div", attrs={"class": u"ak-container ak-content-list ak-displaymode-col"})
         bonuses = bonuses.find_all("div", attrs={"class": u"ak-list-element"})
         for bonus in bonuses:
-            item.bonus.append(bonus.find("div", attrs={"class": u"ak-title"}).text.strip())
+            txt = bonus.find("div", attrs={"class": u"ak-title"})
+            if(txt != None):
+                item.addBonus(txt.text.strip())
 
         niveaux = tr.find("td", attrs={"class": u"item-level"})
-        item.niveau = niveaux.text.split("Niv. ")[1]
+        try:
+            item.niveau = niveaux.text.split("Niv. ")[1]
+        except:
+            pass
 
         items.append(item)
-        cpt += 1
+        cpt.inc()
 
     return items
 
@@ -73,23 +81,27 @@ def split_seq(seq, size):
 def split_list(alist, wanted_items=160):
     piece = ceil(len(alist) / wanted_items)
     print("amount of item: {:d}".format(len(alist)))
-    print("amoun of piece of 160: {:d}".format(piece))
+    print("amount of piece of 160: {:d}".format(piece))
     return split_seq(alist, piece)
 
 
 def main():
-    sources = get_all_sources(1)
+    sources = get_all_sources(191)
     print(len(sources))
     all_items = []
+    cpt = Cpt()
     for source in sources:
-        items = get_items(source)
+        items = get_items(source, cpt)
         all_items = all_items + items
     tabs = split_list(all_items, 160)
 
+    cpt=0
     for tab in tabs:
+        print("{:d}/{:d}".format(cpt, len(tabs)))
         payload = Item.getPayload(tab)
         requete = requests.post("http://localhost:8000/api/addstuff/", data=payload)
         print(requete.reason)
+        cpt+=1
 
 def main2():
     for i in range(27, 72):
@@ -104,5 +116,15 @@ def main3():
 
     requete = requests.post("http://localhost:8000/api/addstuff/", data=payload)
     print(requete.reason)
+
+def main4():
+    test = "1 PA;1 PM;1 Contrôle;534 Points de Vie;3% Coup Critique;8% Parade;200 Maîtrise sur 3 éléments aléatoires;45 Résistance  Eau;45 Résistance  Feu;45 Résistance  Terre"
+    item = Item()
+    for elm in test.split(";"):
+        item.addBonus(elm)
+
+def main5():
+    mot = "Résistance Terre"
+    print(" ".join([x for x in mot.split(" ") if x]))
 
 main()

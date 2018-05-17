@@ -7,7 +7,7 @@ class Stuff(models.Model):
     quality = models.CharField(max_length=255)
     type = models.CharField(max_length=255)
     niveau = models.CharField(max_length=255)
-    bonus = models.CharField(max_length=2500)
+    bonus = models.CharField(max_length=2500, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
