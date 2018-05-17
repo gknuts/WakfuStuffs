@@ -44,6 +44,10 @@ INSTALLED_APPS = [
 
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 10240
 
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'assets'),
+)
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

@@ -12,13 +12,11 @@ export default function wakfu(state=initialState, action) {
                 ...state,
             stuffs: action.stuffs
             }
-            break
         case types.FETCH_STUFFS_LIMITS:
             return {
                 ...state,
             stuffs: action.stuffs.results
             }
-            break
         default:
             return state
     }

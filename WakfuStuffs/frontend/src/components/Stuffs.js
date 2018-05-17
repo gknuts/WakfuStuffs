@@ -11,8 +11,8 @@ class Stuffs extends Component{
     }
 
     get_url_small_image = (id_image) => {
-        return "https://s.ankama.com/www/static.ankama.com/wakfu/portal/game/item/42/"+id_image+".w40h40.png"
-        //return ""
+        //return "https://s.ankama.com/www/static.ankama.com/wakfu/portal/game/item/42/"+id_image+".w40h40.png"
+        return "/static/icones/"+id_image+".png"
     }
 
     get_url_image = (id_image) => {
