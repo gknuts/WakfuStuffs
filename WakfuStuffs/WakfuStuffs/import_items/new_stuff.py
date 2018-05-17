@@ -9,7 +9,7 @@ from WakfuStuffs.WakfuStuffs.import_items.Item import Item
 
 def get_all_sources(number):
     sources = []
-    for i in range(188, 191):
+    for i in range(0, number):
         print("{:d}/191".format(i+1))
         filename= "source/{:d}.html".format(i+1)
         with open(filename, 'r', encoding='utf-8') as input:
