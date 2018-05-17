@@ -1,8 +1,8 @@
 from rest_framework import status
 from rest_framework import viewsets, permissions
-from rest_framework.generics import DestroyAPIView
+from rest_framework.generics import DestroyAPIView, ListAPIView
+from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
-from rest_framework.decorators import api_view
 from rest_framework.views import APIView
 
 from .models import Stuff, Tag
@@ -14,6 +14,17 @@ class StuffViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.AllowAny, ]
     serializer_class = StuffSerializer
 
+
+class LargeResultsSetPagination(PageNumberPagination):
+    page_size = 2
+    page_size_query_param = 'page_size'
+    max_page_size = 100
+
+
+class StuffRecordsView(ListAPIView):
+    queryset = Stuff.objects.all().order_by("niveau")
+    serializer_class = StuffSerializer
+    pagination_class = LargeResultsSetPagination
 
 
 
@@ -27,7 +38,7 @@ class EndView(viewsets.ModelViewSet):
         page = self.paginate_queryset(queryset)
         if page is not None:
             serializer = self.get_serializer(page, many=True)
-            return self.get_paginated_response(serializer.data)
+            return self.get_paginated_response(serializer.data, 20)
 
         serializer = self.get_serializer(queryset, many=True)
         return queryset
@@ -38,15 +49,27 @@ class ListStuff(APIView):
 
     def get(self, request, format=None):
         names = None
+        param = request.query_params
         if('letter' in request.query_params and request.query_params['letter'] is not None):
             letter = request.query_params['letter']
             names = [stuff.name for stuff in Stuff.objects.all().filter(name__startswith=letter)]
         elif('id' in request.query_params and request.query_params['id'] is not None):
             id = request.query_params['id']
             names = [stuff.name for stuff in Stuff.objects.all().filter(id=id)]
+        elif('id_image' in request.query_params and request.query_params['id_image'] is not None):
+            id_image = [stuff.id_image for stuff in Stuff.objects.all()]
         else:
             names = [stuff.name for stuff in Stuff.objects.all()]
         return Response(names)
+
+class ListIdImage(APIView):
+    permission_classes = [permissions.AllowAny, ]
+    serializer_class = StuffSerializer
+
+    def get(self, request, format=None):
+        id_image = None
+        id_image = [stuff.id_image for stuff in Stuff.objects.all()]
+        return Response(id_image)
 
 class AddStuff(APIView):
     permission_classes = [permissions.AllowAny, ]

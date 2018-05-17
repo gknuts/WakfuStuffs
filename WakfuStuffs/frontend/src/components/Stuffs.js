@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 
 class Stuffs extends Component{
     componentDidMount() {
-        this.props.actions.fetchStuffs();
+        this.props.actions.fetchStuffsLimits();
     }
 
     buttonClicked = () => {
@@ -11,8 +11,8 @@ class Stuffs extends Component{
     }
 
     get_url_small_image = (id_image) => {
-        //return "https://s.ankama.com/www/static.ankama.com/wakfu/portal/game/item/42/"+id_image+".w40h40.png"
-        return ""
+        return "https://s.ankama.com/www/static.ankama.com/wakfu/portal/game/item/42/"+id_image+".w40h40.png"
+        //return ""
     }
 
     get_url_image = (id_image) => {
@@ -24,10 +24,11 @@ class Stuffs extends Component{
           <div>
             <div id="App">
                 <button onClick={this.buttonClicked}>TEST</button>
+                    {console.log(this.props.stuffs)}
                     {this.props.stuffs.map((elm, key) =>
                         <p key={key}>
-                            <img src={this.get_url_small_image(elm.id_image)} alt={elm.name}/>
-                            {elm.name} - {elm.quality} - {elm.niveau} - {elm.bonus}
+                                <img src={this.get_url_small_image(elm.id_image)} alt={elm.name}/>
+                            {elm.name} - {elm.type} - {elm.quality} - {elm.niveau} - {elm.bonus}
                         </p>
                     )}
             </div>

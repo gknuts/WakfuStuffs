@@ -1,5 +1,7 @@
+import os
+import urllib
+
 import requests
-import sys
 from bs4 import BeautifulSoup
 from math import ceil
 
@@ -127,4 +129,26 @@ def main5():
     mot = "Résistance Terre"
     print(" ".join([x for x in mot.split(" ") if x]))
 
-main()
+def main6():
+    request_headers = {
+        "Accept-Language": "en-US,en;q=0.5",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0",
+        "Referer": "http://thewebsite.com",
+        "Connection": "keep-alive"
+    }
+    requete = requests.get("http://localhost:8000/api/id_image/")
+    id_images = requete.content
+    ids = id_images.decode().split("[")[1].split("]")[0].split(",")
+    cpt=0
+    for id in ids:
+        id_image = id.split('"')[1]
+        url = "https://s.ankama.com/www/static.ankama.com/wakfu/portal/game/item/115/{:d}.png".format(int(id_image))
+        out_image = "imgs/{:d}.png".format(int(id_image))
+        os.system("wget -O {0} {1} -q".format(out_image, url))
+        cpt+=1
+        if(cpt%50 ==0):
+            print(cpt)
+
+
+
+main6()
