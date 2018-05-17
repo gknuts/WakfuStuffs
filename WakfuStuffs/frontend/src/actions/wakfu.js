@@ -17,7 +17,7 @@ export const fetchStuffs = () => {
 export const fetchStuffsLimits = () => {
   return dispatch => {
     let headers = {"Content-Type": "application/json"};
-    return fetch("/api/limitstuff/?page_size=100&page=1", {headers, })
+    return fetch("/api/limitstuff/?page_size=3&page=1", {headers, })
       .then(res => res.json())
       .then(stuffs => {
         return dispatch({

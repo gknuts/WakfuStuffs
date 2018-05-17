@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
+import DisplayJson from "./DisplayJson";
 
 class Stuffs extends Component{
     componentDidMount() {
         this.props.actions.fetchStuffsLimits();
-    }
-
-    buttonClicked = () => {
-        console.log("clicked")
     }
 
     get_url_small_image = (id_image) => {
@@ -23,7 +20,7 @@ class Stuffs extends Component{
         return (
           <div>
             <div id="App">
-                <button onClick={this.buttonClicked}>TEST</button>
+                <DisplayJson {...this.props}/>
                     {console.log(this.props.stuffs)}
                     {this.props.stuffs.map((elm, key) =>
                         <p key={key}>
