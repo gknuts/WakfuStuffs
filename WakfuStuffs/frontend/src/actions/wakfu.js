@@ -14,10 +14,10 @@ export const fetchStuffs = () => {
   }
 }
 
-export const fetchStuffsLimits = (page) => {
+export const fetchStuffsLimits = (page, size) => {
   return dispatch => {
     let headers = {"Content-Type": "application/json"};
-    return fetch("/api/limitstuff/?page_size=20&page="+page, {headers, })
+    return fetch("/api/limitstuff/?page_size="+size+"&page="+page, {headers, })
       .then(res => res.json())
       .then(stuffs => {
         return dispatch({

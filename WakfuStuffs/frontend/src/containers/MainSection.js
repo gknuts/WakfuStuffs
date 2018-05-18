@@ -8,6 +8,8 @@ const mapStateToProps = state => {
         stuffs: state.wakfu.stuffs,
         cpt: state.wakfu.cpt,
         page: state.wakfu.page,
+        total: state.wakfu.total,
+        size_page: state.wakfu.size_page,
     }
 }
 

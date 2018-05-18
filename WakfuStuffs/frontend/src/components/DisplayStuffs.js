@@ -5,7 +5,7 @@ import { Table } from 'reactstrap';
 
 class DisplayStuffs extends Component{
     componentDidMount() {
-        this.props.actions.fetchStuffsLimits(this.props.page);
+        this.props.actions.fetchStuffsLimits(this.props.page, this.props.size_page);
     }
 
     get_image = (id_image) => {

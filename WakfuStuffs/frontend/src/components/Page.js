@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 class Page extends Component{
     constructor(props) {
         super(props);
-        this.state = {"pages": [], "max": 230, "left": -1, "right": -1}
+        this.state = {"pages": [], "left": -1, "right": -1, "max": 10}
     }
     componentDidMount() {
         this.getNumPages(this.props.page, this.state.max)
@@ -15,17 +15,24 @@ class Page extends Component{
      if(prevProps.page !== this.props.page) {
        this.getNumPages(this.props.page, this.state.max)
      }
+     if(prevProps.total !== this.props.total) {
+       this.getNumPages(this.props.page, this.state.max)
+     }
+     if(prevProps.size_page !== this.props.size_page) {
+       this.getNumPages(this.props.page, this.state.max)
+     }
    }
 
     changePage = (value) => {
         this.props.actions.changePage(value)
-        this.props.actions.fetchStuffsLimits(value)
-        this.getNumPages(value, this.state.max)
+        this.props.actions.fetchStuffsLimits(value, this.props.size_page)
+        this.getNumPages(value)
     }
 
 
 
-    getNumPages = (num, max) => {
+    getNumPages = (num) => {
+        let max = Math.ceil(this.props.total / this.props.size_page)
         let table = []
         let min
         if(num >= 6) {
@@ -95,7 +102,7 @@ class Page extends Component{
 
     render(){
         return (
-            <div class="PageBar">
+            <div className="PageBar">
                 {this.buildPagination(this.state.pages)}
             </div>
         )
