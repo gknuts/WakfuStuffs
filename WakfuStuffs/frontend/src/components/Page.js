@@ -5,17 +5,19 @@ import {connect} from 'react-redux';
 class Page extends Component{
     constructor(props) {
         super(props);
-        this.state = {"pages": [], "page": this.props.page, "max": 230, "left": -1, "right": -1}
+        this.state = {"pages": [], "max": 230, "left": -1, "right": -1}
     }
     componentDidMount() {
         this.getNumPages(this.props.page, this.state.max)
     }
-    componentWillMount() {
-        this.getNumPages(this.props.page, this.state.max)
-    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+     if(prevProps.page !== this.props.page) {
+       this.getNumPages(this.props.page, this.state.max)
+     }
+   }
 
     changePage = (value) => {
-        this.setState({"page": value})
         this.props.actions.changePage(value)
         this.props.actions.fetchStuffsLimits(value)
         this.getNumPages(value, this.state.max)
@@ -59,17 +61,7 @@ class Page extends Component{
     }
 
     getPaginationItem = (value) => {
-        return (
-            <PaginationItem key={value}>
-              <PaginationLink onClick={() =>{this.changePage(value)}} >
-                  {this.state.left === value || this.state.right === value ? "..." : value}
-              </PaginationLink>
-            </PaginationItem>
-        )
-    }
-
-    getPaginationItem2 = (value) => {
-        const isPage = (value === this.state.page)
+        const isPage = (value === this.props.page)
 
         const content = (
           <PaginationLink onClick={() =>{this.changePage(value)}} >
@@ -95,7 +87,7 @@ class Page extends Component{
         return(
             <Pagination size="sm">
             {table.map((elm) =>{
-                return this.getPaginationItem2(elm)
+                return this.getPaginationItem(elm)
             })}
             </Pagination>
         )
