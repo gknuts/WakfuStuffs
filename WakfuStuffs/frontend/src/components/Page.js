@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Pagination, PaginationItem, PaginationLink, Button } from 'reactstrap';
+import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
 import {connect} from 'react-redux';
 
 class Page extends Component{
@@ -13,6 +13,7 @@ class Page extends Component{
 
     changePage = (value) => {
         this.setState({"page": value})
+        this.props.actions.changePage(value)
         this.props.actions.fetchStuffsLimits(value)
         this.getNumPages(value, this.state.max)
     }
@@ -60,13 +61,34 @@ class Page extends Component{
         )
     }
 
+    getPaginationItem2 = (value) => {
+        const isPage = (value === this.state.page)
+
+        const content = (
+          <PaginationLink onClick={() =>{this.changePage(value)}} >
+              {this.state.left === value || this.state.right === value ? "..." : value}
+          </PaginationLink>
+        )
+        return (
+            <React.Fragment key={value}>
+                {isPage ? (
+                    <PaginationItem active>
+                        {content}
+                    </PaginationItem>
+                ):(
+                    <PaginationItem>
+                        {content}
+                    </PaginationItem>
+                )}
+            </React.Fragment>
+        )
+    }
+
     buildPagination = (table) => {
-        console.log("PAGE")
-        console.log(this.state.page)
         return(
             <Pagination size="sm">
             {table.map((elm) =>{
-                return this.getPaginationItem(elm)
+                return this.getPaginationItem2(elm)
             })}
             </Pagination>
         )
@@ -79,53 +101,6 @@ class Page extends Component{
             </div>
         )
     }
-
-    render2() {
-        return (
-        <div align="center">
-            <Button onClick={() => {this.getNumPages(6, 191)}}>Test</Button><br/>
-            {this.state.pages.map((page) =>  "[" + page + "]")}
-          <Pagination size="sm">
-            <PaginationItem>
-              <PaginationLink previous onClick={() =>{}} />
-            </PaginationItem>
-            <PaginationItem active>
-              <PaginationLink onClick={() =>{this.changePage(1)}} >
-                1
-              </PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink onClick={() =>{this.changePage(2)}} >
-                2
-              </PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink onClick={() =>{this.changePage(3)}} >
-                3
-              </PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink onClick={() =>{this.changePage(4)}} >
-                4
-              </PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink>
-                ...
-              </PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink onClick={() =>{this.changePage(230)}} >
-                230
-              </PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink next onClick={() =>{}} />
-            </PaginationItem>
-          </Pagination>
-        </div>
-        );
-      }
 }
 
 
