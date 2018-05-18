@@ -5,10 +5,13 @@ import {connect} from 'react-redux';
 class Page extends Component{
     constructor(props) {
         super(props);
-        this.state = {"pages": [1, 2, 3], "page": 7, "max": 191, "left": -1, "right": -1}
+        this.state = {"pages": [], "page": this.props.page, "max": 230, "left": -1, "right": -1}
     }
     componentDidMount() {
-        this.getNumPages(this.state.page, 191)
+        this.getNumPages(this.props.page, this.state.max)
+    }
+    componentWillMount() {
+        this.getNumPages(this.props.page, this.state.max)
     }
 
     changePage = (value) => {
@@ -32,10 +35,14 @@ class Page extends Component{
             }
             let i
             for (i = min; i < num+4; i++){
-                table.push(i)
+                if(i < max) table.push(i)
             }
-            table.push(i)
-            this.setState({"right": i})
+            if(i < max){
+                table.push(i)
+                this.setState({"right": i})
+            }else{
+                this.setState({"right": -1})
+            }
             table.push(max)
         }else{
             this.setState({"left": -1})
