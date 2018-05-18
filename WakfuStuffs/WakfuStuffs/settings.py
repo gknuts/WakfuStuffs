@@ -135,3 +135,5 @@ WEBPACK_LOADER = {
             'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.dev.json'),
         }
 }
+
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'greenlamp.be']
