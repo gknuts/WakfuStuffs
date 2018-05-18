@@ -1,33 +1,45 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import DisplayJson from "./DisplayJson";
+import { Table } from 'reactstrap';
 
 class Stuffs extends Component{
     componentDidMount() {
-        this.props.actions.fetchStuffsLimits();
+        this.props.actions.fetchStuffsLimits(this.props.page);
     }
 
-    get_url_small_image = (id_image) => {
-        //return "https://s.ankama.com/www/static.ankama.com/wakfu/portal/game/item/42/"+id_image+".w40h40.png"
+    get_image = (id_image) => {
         return "/static/icones/"+id_image+".png"
-    }
-
-    get_url_image = (id_image) => {
-        return "https://s.ankama.com/www/static.ankama.com/wakfu/portal/game/item/115/"+id_image+".png"
     }
 
     render() {
         return (
           <div>
             <div id="App">
+                Page: {this.props.page}
                 <DisplayJson {...this.props}/>
-                    {console.log(this.props.stuffs)}
+                    <Table striped>
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Quality</th>
+                        <th>Type</th>
+                        <th>Niveau</th>
+                      </tr>
+                    </thead>
+                    <tbody>
                     {this.props.stuffs.map((elm, key) =>
-                        <p key={key}>
-                                <img src={this.get_url_small_image(elm.id_image)} alt={elm.name}/>
-                            {elm.name} - {elm.type} - {elm.quality} - {elm.niveau} - {elm.bonus}
-                        </p>
+                        <tr key={key}>
+                            <th scope="row"><img src={this.get_image(elm.id_image)} alt={elm.name} height="50"/></th>
+                            <td>{elm.name}</td>
+                            <td>{elm.quality}</td>
+                            <td>{elm.type}</td>
+                            <td>{elm.niveau}</td>
+                        </tr>
                     )}
+                    </tbody>
+                    </Table>
             </div>
           </div>
         )

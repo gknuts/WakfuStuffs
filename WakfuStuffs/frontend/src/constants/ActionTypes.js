@@ -1,2 +1,3 @@
 export const FETCH_STUFFS = 'FETCH_STUFFS'
 export const FETCH_STUFFS_LIMITS = 'FETCH_STUFFS_LIMITS'
+export const CHANGE_PAGE = 'CHANGE_PAGE'

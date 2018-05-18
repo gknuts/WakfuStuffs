@@ -7,6 +7,7 @@ const mapStateToProps = state => {
     return {
         stuffs: state.wakfu.stuffs,
         cpt: state.wakfu.cpt,
+        page: state.wakfu.page,
     }
 }
 

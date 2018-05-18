@@ -22,7 +22,7 @@ class LargeResultsSetPagination(PageNumberPagination):
 
 
 class StuffRecordsView(ListAPIView):
-    queryset = Stuff.objects.all().order_by("niveau")
+    queryset = Stuff.objects.all().order_by("id")
     serializer_class = StuffSerializer
     pagination_class = LargeResultsSetPagination
 

@@ -14,10 +14,10 @@ export const fetchStuffs = () => {
   }
 }
 
-export const fetchStuffsLimits = () => {
+export const fetchStuffsLimits = (page) => {
   return dispatch => {
     let headers = {"Content-Type": "application/json"};
-    return fetch("/api/limitstuff/?page_size=3&page=1", {headers, })
+    return fetch("/api/limitstuff/?page_size=20&page="+page, {headers, })
       .then(res => res.json())
       .then(stuffs => {
         return dispatch({
@@ -27,3 +27,6 @@ export const fetchStuffsLimits = () => {
       })
   }
 }
+
+
+export const changePage = (numPage) => ({ type: types.CHANGE_PAGE, value: numPage })

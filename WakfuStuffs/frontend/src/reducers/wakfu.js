@@ -3,6 +3,7 @@ import * as types from "../constants/ActionTypes";
 const initialState = {
     stuffs: [],
     cpt: 0,
+    page: 1,
 }
 
 export default function wakfu(state=initialState, action) {
@@ -17,6 +18,12 @@ export default function wakfu(state=initialState, action) {
                 ...state,
             stuffs: action.stuffs.results
             }
+        case types.CHANGE_PAGE:
+            return {
+                ...state,
+            page: action.value
+            }
+
         default:
             return state
     }
