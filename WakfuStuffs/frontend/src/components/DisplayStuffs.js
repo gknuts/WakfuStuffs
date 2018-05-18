@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import DisplayJson from "./DisplayJson";
 import { Table } from 'reactstrap';
 
-class Stuffs extends Component{
+class DisplayStuffs extends Component{
     componentDidMount() {
         this.props.actions.fetchStuffsLimits(this.props.page);
     }
@@ -46,4 +46,4 @@ class Stuffs extends Component{
     }
 }
 
-export default connect()(Stuffs);
+export default connect()(DisplayStuffs);
