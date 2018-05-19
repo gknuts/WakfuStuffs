@@ -26,6 +26,8 @@ export default function wakfu(state=initialState, action) {
                 ...state,
             page: action.value
             }
+        case types.FETCH_STUFFS_FILTERED:
+            return state
 
         default:
             return state

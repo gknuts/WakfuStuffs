@@ -1,12 +1,11 @@
 body {
   margin: 0;
-  padding-left: 300px;
-  padding-right: 200px;
   font-family: sans-serif;
 }
 
-.PageBar{
+.pageBar{
     text-align: center;
+    align: center;
 }
 
 .wrap {
@@ -15,14 +14,17 @@ body {
 }
 
 .fleft {
-    float:left;
+    padding-left: 200px;
+    padding-right: 50px;
     float:left;
     width: 80%;
 }
 
 .fright {
+    padding-right: 50px;
     float: right;
     width: 20%;
+    position:relative;
 }
 
 .paginationBar{

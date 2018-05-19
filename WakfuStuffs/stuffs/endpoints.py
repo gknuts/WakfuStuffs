@@ -1,7 +1,15 @@
 from django.conf.urls import include, url
 from rest_framework import routers
 
-from .api import StuffViewSet, EndView, ListStuff, AddStuff, DeleteAllStuff, StuffRecordsView, ListIdImage
+from stuffs.Api.StuffViewSet import StuffViewSet
+from stuffs.Api.PaginatedStuff import PaginatedStuff
+from stuffs.Api.EndView import EndView
+from stuffs.Api.ListStuff import ListStuff
+from stuffs.Api.ListIdImage import ListIdImage
+from stuffs.Api.AddStuff import AddStuff
+from stuffs.Api.DeleteAllStuff import DeleteAllStuff
+from stuffs.Api.Filtered import Filtered
+from stuffs.Api.CorrectionDb import CorrectionDb
 
 router = routers.DefaultRouter()
 router.register('stuffs', StuffViewSet)
@@ -13,6 +21,8 @@ urlpatterns = [
     url(r"^id_image", ListIdImage.as_view()),
     url(r"^addstuff", AddStuff.as_view()),
     url(r"^deleteallstuff", DeleteAllStuff.as_view()),
-    url(r"^limitstuff", StuffRecordsView.as_view()),
+    url(r"^limitstuff", PaginatedStuff.as_view()),
+    url(r"^filtered", Filtered.as_view()),
+    url(r"^correction", CorrectionDb.as_view()),
 
 ]

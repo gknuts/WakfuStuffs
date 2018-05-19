@@ -151,4 +151,4 @@ def main6():
 
 
 
-main6()
+main()

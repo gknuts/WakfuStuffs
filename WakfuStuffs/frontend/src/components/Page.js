@@ -94,7 +94,7 @@ class Page extends Component{
 
     buildPagination = (table) => {
         return(
-            <Pagination size="sm" className="paginationBar">
+            <Pagination>
             {table.map((elm) =>{
                 return this.getPaginationItem(elm)
             })}
