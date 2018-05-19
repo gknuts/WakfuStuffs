@@ -24,6 +24,44 @@ class SearchForm extends Component {
             Ceinture: false,
             Epaulettes: false,
             Plastron: false,
+            ArtDuBarda: false,
+            Controle: false,
+            CoupCritique: false,
+            Esquive: false,
+            Initiative: false,
+            MaitriseAir: false,
+            MaitriseEau: false,
+            MaitriseFeu: false,
+            MaitriseTerre: false,
+            MaitriseBerserk: false,
+            MaitriseCritique: false,
+            MaitriseDistance: false,
+            MaitriseDos: false,
+            MaitriseMelee: false,
+            MaitriseSoin: false,
+            MaitriseElem: false,
+            NivAir: false,
+            NivEau: false,
+            NivFeu: false,
+            NivTerre: false,
+            NivElem: false,
+            PA: false,
+            PM: false,
+            PW: false,
+            Parade: false,
+            Pdv: false,
+            Portee: false,
+            Prospection: false,
+            ResAir: false,
+            ResEau: false,
+            ResFeu: false,
+            ResTerre: false,
+            ResCrit: false,
+            ResDos: false,
+            ResElem: false,
+            Sagesse: false,
+            Tacle: false,
+            Volonte: false,
         };
     }
 
@@ -71,6 +109,157 @@ class SearchForm extends Component {
         return filter
     }
 
+    buildFilterTag = (filter) => {
+            if(
+            this.state.ArtDuBarda ||
+            this.state.Controle ||
+            this.state.CoupCritique ||
+            this.state.Esquive ||
+            this.state.Initiative ||
+            this.state.MaitriseAir ||
+            this.state.MaitriseEau ||
+            this.state.MaitriseFeu ||
+            this.state.MaitriseTerre ||
+            this.state.MaitriseBerserk ||
+            this.state.MaitriseCritique ||
+            this.state.MaitriseDistance ||
+            this.state.MaitriseDos ||
+            this.state.MaitriseMelee ||
+            this.state.MaitriseSoin ||
+            this.state.MaitriseElem ||
+            this.state.NivAir ||
+            this.state.NivEau ||
+            this.state.NivFeu ||
+            this.state.NivTerre ||
+            this.state.NivElem ||
+            this.state.PA ||
+            this.state.PM ||
+            this.state.PW ||
+            this.state.Parade ||
+            this.state.Pdv ||
+            this.state.Portee ||
+            this.state.Prospection ||
+            this.state.ResAir ||
+            this.state.ResEau ||
+            this.state.ResFeu ||
+            this.state.ResTerre ||
+            this.state.ResCrit ||
+            this.state.ResDos ||
+            this.state.ResElem ||
+            this.state.Sagesse ||
+            this.state.Tacle ||
+            this.state.Volonte){
+                filter = filter + "&tags="
+
+                if(this.state.ArtDuBarda) filter = filter + "Art du Barda,"
+                if(this.state.Controle) filter = filter + "Contrôle,"
+                if(this.state.CoupCritique) filter = filter + "Coup Critique,"
+                if(this.state.Esquive) filter = filter + "Esquive,"
+                if(this.state.Initiative) filter = filter + "Initiative,"
+                if(this.state.MaitriseAir){
+                    filter = filter + "Maîtrise Air"
+                    filter = filter + "_Maîtrise Élémentaire"
+                    filter = filter + "_Maîtrise sur X élément aléatoire"
+                    filter = filter + "_Maîtrise sur X éléments aléatoires,"
+                }
+                if(this.state.MaitriseEau){
+                    filter = filter + "Maîtrise Eau"
+                    filter = filter + "_Maîtrise Élémentaire"
+                    filter = filter + "_Maîtrise sur X élément aléatoire"
+                    filter = filter + "_Maîtrise sur X éléments aléatoires,"
+                }
+                if(this.state.MaitriseFeu){
+                    filter = filter + "Maîtrise Feu,"
+                    filter = filter + "_Maîtrise Élémentaire"
+                    filter = filter + "_Maîtrise sur X élément aléatoire"
+                    filter = filter + "_Maîtrise sur X éléments aléatoires,"
+                }
+                if(this.state.MaitriseTerre){
+                    filter = filter + "Maîtrise Terre,"
+                    filter = filter + "_Maîtrise Élémentaire"
+                    filter = filter + "_Maîtrise sur X élément aléatoire"
+                    filter = filter + "_Maîtrise sur X éléments aléatoires,"
+                }
+                if(this.state.MaitriseBerserk) filter = filter + "Maîtrise Berserk,"
+                if(this.state.MaitriseCritique) filter = filter + "Maîtrise Critique,"
+                if(this.state.MaitriseDistance) filter = filter + "Maîtrise Distance,"
+                if(this.state.MaitriseDos) filter = filter + "Maîtrise Dos,"
+                if(this.state.MaitriseMelee) filter = filter + "Maîtrise Mêlée,"
+                if(this.state.MaitriseSoin) filter = filter + "Maîtrise Soin,"
+                if(this.state.MaitriseElem) filter = filter + "Maîtrise Élémentaire,"
+                if(this.state.NivAir){
+                    filter = filter + "Niv. aux sorts élémentaires,"
+                }
+                if(this.state.NivEau){
+                    filter = filter + "Niv. aux sorts élémentaires,"
+                }
+                if(this.state.NivFeu){
+                    filter = filter + "Niv. aux sorts Feu"
+                    filter = filter + "_Niv. aux sorts élémentaires,"
+                }
+                if(this.state.NivTerre){
+                    filter = filter + "Niv. aux sorts Terre"
+                    filter = filter + "_Niv. aux sorts élémentaires,"
+                }
+                if(this.state.NivElem) filter = filter + "Niv. aux sorts élémentaires,"
+                if(this.state.PA){
+                    filter = filter + "PA"
+                    filter = filter + "_PA max,"
+                }
+                if(this.state.PM){
+                    filter = filter + "PM"
+                    filter = filter + "_PM max,"
+                }
+                if(this.state.PW){
+                    filter = filter + "PW"
+                    filter = filter + "_PW max,"
+                }
+                if(this.state.Parade) filter = filter + "Parade,"
+                if(this.state.Pdv){
+                    filter = filter + "Point de Vie"
+                    filter = filter + "_Points de Vie,"
+                }
+                if(this.state.Portee) filter = filter + "Portée,"
+                if(this.state.Prospection) filter = filter + "Prospection,"
+                if(this.state.ResAir){
+                    filter = filter + "Résistance Air"
+                    filter = filter + "_Résistance Élémentaire"
+                    filter = filter + "_Résistance sur 1 élément aléatoire"
+                    filter = filter + "_Résistance sur 2 éléments aléatoires"
+                    filter = filter + "_Résistance sur 3 éléments aléatoires"
+                }
+                if(this.state.ResEau){
+                    filter = filter + "Résistance Eau"
+                    filter = filter + "_Résistance Élémentaire"
+                    filter = filter + "_Résistance sur 1 élément aléatoire"
+                    filter = filter + "_Résistance sur 2 éléments aléatoires"
+                    filter = filter + "_Résistance sur 3 éléments aléatoires"
+                }
+                if(this.state.ResFeu){
+                    filter = filter + "Résistance Feu"
+                    filter = filter + "_Résistance Élémentaire"
+                    filter = filter + "_Résistance sur 1 élément aléatoire"
+                    filter = filter + "_Résistance sur 2 éléments aléatoires"
+                    filter = filter + "_Résistance sur 3 éléments aléatoires"
+                }
+                if(this.state.ResTerre){
+                    filter = filter + "Résistance Terre,"
+                    filter = filter + "_Résistance Élémentaire,"
+                    filter = filter + "_Résistance sur 1 élément aléatoire,"
+                    filter = filter + "_Résistance sur 2 éléments aléatoires,"
+                    filter = filter + "_Résistance sur 3 éléments aléatoires,"
+                }
+                if(this.state.ResCrit) filter = filter + "Résistance Critique,"
+                if(this.state.ResDos) filter = filter + "Résistance Dos,"
+                if(this.state.ResElem) filter = filter + "Résistance Élémentaire,"
+                if(this.state.Sagesse) filter = filter + "Sagesse,"
+                if(this.state.Tacle) filter = filter + "Tacle,"
+                if(this.state.Volonte) filter = filter + "Volonté,"
+
+            }
+        return filter
+    }
+
     buildFilter = () => {
         let filter = ''
         if(this.state.name !== ''){
@@ -84,6 +273,9 @@ class SearchForm extends Component {
         }
         filter = this.buildFilterQuality(filter)
         filter = this.buildFilterType(filter)
+        filter = this.buildFilterTag(filter)
+
+        console.log("filterTemp: " + filter)
 
         return filter
     }
@@ -130,13 +322,47 @@ class SearchForm extends Component {
                         </div>
                     </FormGroup>
                     <FormGroup check>
-                        <Label><b>Type</b></Label><br/>
+                        <Label><b>Bonus</b></Label><br/>
                         <div>
-                        <CustomInput type="checkbox" name="ArtduBarda" id="ArtduBarda" label="Art du Barda" value={this.state.ArtduBarda} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="ArtDuBarda" id="ArtDuBarda" label="Art du Barda" value={this.state.ArtDuBarda} onChange={this.handleChange}/>
                         <CustomInput type="checkbox" name="Controle" id="Controle" label="Contrôle" value={this.state.Controle} onChange={this.handleChange}/>
                         <CustomInput type="checkbox" name="CoupCritique" id="CoupCritique" label="Coup Critique" value={this.state.CoupCritique} onChange={this.handleChange}/>
                         <CustomInput type="checkbox" name="Esquive" id="Esquive" label="Esquive" value={this.state.Esquive} onChange={this.handleChange}/>
                         <CustomInput type="checkbox" name="Initiative" id="Initiative" label="Initiative" value={this.state.Esquive} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="MaitriseAir" id="MaitriseAir" label="Maîtrise Air" value={this.state.MaitriseAir} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="MaitriseEau" id="MaitriseEau" label="Maîtrise Eau" value={this.state.MaitriseEau} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="MaitriseFeu" id="MaitriseFeu" label="Maîtrise Feu" value={this.state.MaitriseFeu} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="MaitriseTerre" id="MaitriseTerre" label="Maîtrise Terre" value={this.state.MaitriseTerre} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="MaitriseBerserk" id="MaitriseBerserk" label="Maîtrise Berserk" value={this.state.MaitriseBerserk} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="MaitriseCritique" id="MaitriseCritique" label="Maîtrise Critique" value={this.state.MaitriseCritique} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="MaitriseDistance" id="MaitriseDistance" label="Maîtrise Distance" value={this.state.MaitriseDistance} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="MaitriseDos" id="MaitriseDos" label="Maîtrise Dos" value={this.state.MaitriseDos} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="MaitriseMono" id="MaitriseMono" label="Maîtrise Monocible" value={this.state.MaitriseMono} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="MaitriseMelee" id="MaitriseMelee" label="Maîtrise Mêlée" value={this.state.MaitriseMelee} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="MaitriseSoin" id="MaitriseSoin" label="Maîtrise Soin" value={this.state.MaitriseSoin} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="MaitriseElem" id="MaitriseElem" label="Maîtrise Élémentaire" value={this.state.MaitriseElem} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="NivEau" id="NivAir" label="Niveau aux sorts Air" value={this.state.NivAir} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="NivEau" id="NivEau" label="Niveau aux sorts Eau" value={this.state.NivEau} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="NivFeu" id="NivFeu" label="Niveau aux sorts Feu" value={this.state.NivFeu} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="NivTerre" id="NivTerre" label="Niveau aux sorts Terre" value={this.state.NivTerre} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="NivElem" id="NivElem" label="Niveau aux sorts Élémentaire" value={this.state.NivElem} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="PA" id="PA" label="PA" value={this.state.PA} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="PM" id="PM" label="PM" value={this.state.PM} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="PW" id="PW" label="PW" value={this.state.PW} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="Parade" id="Parade" label="Parade" value={this.state.Parade} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="Pdv" id="Pdv" label="Points de Vie" value={this.state.Pdv} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="Portee" id="Portee" label="Portée" value={this.state.Portee} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="Prospection" id="Prospection" label="Prospection" value={this.state.Prospection} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="ResAir" id="ResAir" label="Résistance Air" value={this.state.ResAir} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="ResEau" id="ResEau" label="Résistance Eau" value={this.state.ResEau} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="ResFeu" id="ResFeu" label="Résistance Feu" value={this.state.ResFeu} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="ResTerre" id="ResTerre" label="Résistance Terre" value={this.state.ResTerre} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="ResCrit" id="ResCrit" label="Résistance Critique" value={this.state.ResCrit} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="ResDos" id="ResDos" label="Résistance Dos" value={this.state.ResDos} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="ResElem" id="ResElem" label="Résistance Élémentaire" value={this.state.ResElem} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="Sagesse" id="Sagesse" label="Sagesse" value={this.state.Sagesse} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="Tacle" id="Tacle" label="Tacle" value={this.state.Tacle} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="Volonte" id="Volonte" label="Volonté" value={this.state.Volonte} onChange={this.handleChange}/>
                         </div>
                     </FormGroup>
                     <Button>Submit</Button>

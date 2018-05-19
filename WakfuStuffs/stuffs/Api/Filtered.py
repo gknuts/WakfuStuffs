@@ -44,10 +44,17 @@ class Filtered(APIView):
             items = items.filter(type__in=type)
         if('tags' in request.query_params and request.query_params['tags'] is not None):
             tags = request.query_params['tags']
+            print(tags)
             tags = [str(tags) for tags in tags.split(",")]
             for tag in tags:
-                tags_result = Tag.objects.all().filter(name=tag)
-                items = items.filter(tags__in=tags_result)
+                if(tag != ''):
+                    elms = [str(elm) for elm in tag.split("_")]
+                    if(len(elms)>1):
+                        tags_result = Tag.objects.all().filter(name__in=elms)
+                        items = items.filter(tags__in=tags_result)
+                    else:
+                        tags_result = Tag.objects.all().filter(name=tag)
+                        items = items.filter(tags__in=tags_result)
 
         context = paginator.paginate_queryset(items.order_by("niveau"), request)
         serial = self.serializer_class(context, many=True)

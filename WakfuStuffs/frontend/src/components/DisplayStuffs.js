@@ -21,6 +21,27 @@ class DisplayStuffs extends Component{
      }
    }
 
+   glue = (elm, id) =>{
+        return(
+            <React.Fragment key={elm}>
+            {elm}<br/>
+            </React.Fragment>
+        )
+   }
+
+   getBonuses = (bonuses, id) => {
+        if(bonuses !== "") {
+            let splitted = bonuses.split(";")
+            return (
+                <React.Fragment key={id}>
+                {splitted.map((elm) =>{
+                    return this.glue(elm, id)
+                })}
+                </React.Fragment>
+            )
+        }else return ""
+   }
+
     render() {
         return (
           <div>
@@ -35,6 +56,7 @@ class DisplayStuffs extends Component{
                         <th>Qualité</th>
                         <th>Type</th>
                         <th>Niveau</th>
+                        <th>Bonus</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -45,6 +67,7 @@ class DisplayStuffs extends Component{
                             <td>{elm.quality}</td>
                             <td>{elm.type}</td>
                             <td>{elm.niveau}</td>
+                            <td>{this.getBonuses(elm.bonus, elm.id)}</td>
                         </tr>
                     )}
                     </tbody>
