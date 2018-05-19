@@ -9,7 +9,7 @@ from stuffs.Api.ListIdImage import ListIdImage
 from stuffs.Api.AddStuff import AddStuff
 from stuffs.Api.DeleteAllStuff import DeleteAllStuff
 from stuffs.Api.Filtered import Filtered
-from stuffs.Api.CorrectionDb import CorrectionDb
+from stuffs.Api.GetUniqueTag import GetUniqueTag
 
 router = routers.DefaultRouter()
 router.register('stuffs', StuffViewSet)
@@ -23,6 +23,6 @@ urlpatterns = [
     url(r"^deleteallstuff", DeleteAllStuff.as_view()),
     url(r"^limitstuff", PaginatedStuff.as_view()),
     url(r"^filtered", Filtered.as_view()),
-    url(r"^correction", CorrectionDb.as_view()),
+    url(r"^uniquetag", GetUniqueTag.as_view()),
 
 ]

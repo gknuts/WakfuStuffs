@@ -129,6 +129,16 @@ class SearchForm extends Component {
                         <CustomInput type="checkbox" name="Plastron" id="Plastron" label="Plastron" value={this.state.Plastron} onChange={this.handleChange}/>
                         </div>
                     </FormGroup>
+                    <FormGroup check>
+                        <Label><b>Type</b></Label><br/>
+                        <div>
+                        <CustomInput type="checkbox" name="ArtduBarda" id="ArtduBarda" label="Art du Barda" value={this.state.ArtduBarda} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="Controle" id="Controle" label="Contrôle" value={this.state.Controle} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="CoupCritique" id="CoupCritique" label="Coup Critique" value={this.state.CoupCritique} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="Esquive" id="Esquive" label="Esquive" value={this.state.Esquive} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="Initiative" id="Initiative" label="Initiative" value={this.state.Esquive} onChange={this.handleChange}/>
+                        </div>
+                    </FormGroup>
                     <Button>Submit</Button>
                 </Form>
             </div>

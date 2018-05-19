@@ -5,7 +5,9 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from stuffs.models import Stuff
+from stuffs.models import Tag
 from stuffs.serializers import StuffSerializer
+
 
 
 class LargeResultsSetPagination(PageNumberPagination):
@@ -21,6 +23,7 @@ class Filtered(APIView):
     def get(self, request, format=None):
         items = Stuff.objects.all()
         param = request.query_params
+        paginator = LargeResultsSetPagination()
         results = []
         if('name' in request.query_params and request.query_params['name'] is not None):
             name = request.query_params['name']
@@ -39,8 +42,13 @@ class Filtered(APIView):
             type = request.query_params['type']
             type = [str(type) for type in type.split(",")]
             items = items.filter(type__in=type)
+        if('tags' in request.query_params and request.query_params['tags'] is not None):
+            tags = request.query_params['tags']
+            tags = [str(tags) for tags in tags.split(",")]
+            for tag in tags:
+                tags_result = Tag.objects.all().filter(name=tag)
+                items = items.filter(tags__in=tags_result)
 
-        paginator = LargeResultsSetPagination()
         context = paginator.paginate_queryset(items.order_by("niveau"), request)
         serial = self.serializer_class(context, many=True)
         res_pag = paginator.get_paginated_response(serial.data)
