@@ -16,14 +16,15 @@ class DisplayStuffs extends Component{
         return (
           <div>
             <div id="App">
-                Page: {this.props.page}
+                Page: {this.props.page}<br/>
+                Nombre de résultats: {this.props.total}
                 <DisplayJson {...this.props}/>
-                    <Table striped>
+                    <Table hover>
                     <thead>
                       <tr>
                         <th>#</th>
-                        <th>Name</th>
-                        <th>Quality</th>
+                        <th>Nom</th>
+                        <th>Qualité</th>
                         <th>Type</th>
                         <th>Niveau</th>
                       </tr>

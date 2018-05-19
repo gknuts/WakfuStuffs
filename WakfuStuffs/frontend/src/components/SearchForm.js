@@ -11,7 +11,6 @@ class SearchForm extends Component {
                         <Label for="name">Nom</Label>
                         <Input type="text" name="name" id="name" placeholder="Filtrer" />
                     </FormGroup>
-                    <br/>
                     <FormGroup>
                         <Label for="niveauGauche">De</Label>
                         <Input type="select" name="niveauGauche" id="niveauGauche">

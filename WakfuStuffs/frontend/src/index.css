@@ -1,10 +1,30 @@
 body {
   margin: 0;
   padding-left: 300px;
-  padding-right: 300px;
+  padding-right: 200px;
   font-family: sans-serif;
 }
 
 .PageBar{
     text-align: center;
+}
+
+.wrap {
+    width: 100%;
+    overflow:auto;
+}
+
+.fleft {
+    float:left;
+    float:left;
+    width: 80%;
+}
+
+.fright {
+    float: right;
+    width: 20%;
+}
+
+.paginationBar{
+    cursor: pointer;
 }

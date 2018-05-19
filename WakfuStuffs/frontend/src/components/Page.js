@@ -9,6 +9,7 @@ class Page extends Component{
     }
     componentDidMount() {
         this.getNumPages(this.props.page, this.state.max)
+        window.scrollTo(0, 0)
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
@@ -24,6 +25,7 @@ class Page extends Component{
    }
 
     changePage = (value) => {
+        window.scrollTo(0, 0)
         this.props.actions.changePage(value)
         this.props.actions.fetchStuffsLimits(value, this.props.size_page)
         this.getNumPages(value)
@@ -92,7 +94,7 @@ class Page extends Component{
 
     buildPagination = (table) => {
         return(
-            <Pagination size="sm">
+            <Pagination size="sm" className="paginationBar">
             {table.map((elm) =>{
                 return this.getPaginationItem(elm)
             })}
