@@ -14,10 +14,12 @@ export const fetchStuffs = () => {
   }
 }
 
-export const fetchStuffsLimits = (page, size) => {
+export const fetchStuffsLimits = (page, size, myFilter) => {
+    let url = "/api/filtered/?page_size="+size+"&page="+page+myFilter
+    console.log(url)
   return dispatch => {
     let headers = {"Content-Type": "application/json"};
-    return fetch("/api/limitstuff/?page_size="+size+"&page="+page, {headers, })
+    return fetch(url, {headers, })
       .then(res => res.json())
       .then(stuffs => {
         return dispatch({
@@ -30,3 +32,4 @@ export const fetchStuffsLimits = (page, size) => {
 
 
 export const changePage = (numPage) => ({ type: types.CHANGE_PAGE, value: numPage })
+export const changeFilter = (filter) => ({ type: types.CHANGE_FILTER, value: filter })

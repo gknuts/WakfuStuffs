@@ -5,20 +5,28 @@ import { Table } from 'reactstrap';
 
 class DisplayStuffs extends Component{
     componentDidMount() {
-        this.props.actions.fetchStuffsLimits(this.props.page, this.props.size_page);
+        this.props.actions.fetchStuffsLimits(this.props.page, this.props.size_page, this.props.myFilter);
     }
 
     get_image = (id_image) => {
         return "/static/icones/"+id_image+".png"
     }
 
+    componentDidUpdate(prevProps, prevState, snapshot) {
+     if(prevProps.page !== this.props.page) {
+        this.props.actions.fetchStuffsLimits(this.props.page, this.props.size_page, this.props.myFilter);
+     }
+     if(prevProps.myFilter !== this.props.myFilter) {
+        this.props.actions.fetchStuffsLimits(this.props.page, this.props.size_page, this.props.myFilter);
+     }
+   }
+
     render() {
         return (
           <div>
             <div id="App">
-                Page: {this.props.page}<br/>
-                Nombre de résultats: {this.props.total}
                 <DisplayJson {...this.props}/>
+                    Nb résultat: {this.props.total}
                     <Table hover>
                     <thead>
                       <tr>

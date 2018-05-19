@@ -10,6 +10,7 @@ const mapStateToProps = state => {
         page: state.wakfu.page,
         total: state.wakfu.total,
         size_page: state.wakfu.size_page,
+        myFilter: state.wakfu.myFilter,
     }
 }
 

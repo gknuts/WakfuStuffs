@@ -27,7 +27,6 @@ class Page extends Component{
     changePage = (value) => {
         window.scrollTo(0, 0)
         this.props.actions.changePage(value)
-        this.props.actions.fetchStuffsLimits(value, this.props.size_page)
         this.getNumPages(value)
     }
 
@@ -35,6 +34,16 @@ class Page extends Component{
 
     getNumPages = (num) => {
         let max = Math.ceil(this.props.total / this.props.size_page)
+        if(max <= 10){
+            this.setState({"left": -1})
+            this.setState({"right": -1})
+            let table = []
+            for (let i = 1; i <= max; i++){
+                table.push(i)
+            }
+            this.setState({"pages": table})
+            return
+        }
         let table = []
         let min
         if(num >= 6) {

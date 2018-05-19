@@ -38,7 +38,54 @@ class SearchForm extends Component {
 
     handleSubmit = (event) =>{
         event.preventDefault()
-        console.log(this.state)
+        let filter = this.buildFilter()
+        this.props.actions.changeFilter(filter)
+    }
+
+    buildFilterQuality = (filter) => {
+        if(this.state.Inhabituel || this.state.Rare || this.state.Mythique || this.state.Légendaire || this.state.Relique || this.state.PVP || this.state.Epique){
+            filter = filter + "&quality="
+            if(this.state.Inhabituel) filter = filter + "Inhabituel,"
+            if(this.state.Rare) filter = filter + "Rare,"
+            if(this.state.Mythique) filter = filter + "Mythique,"
+            if(this.state.Légendaire) filter = filter + "Légendaire,"
+            if(this.state.Relique) filter = filter + "Relique,"
+            if(this.state.PVP) filter = filter + "PVP,"
+            if(this.state.Epique) filter = filter + "Epique,"
+        }
+        return filter
+    }
+
+    buildFilterType = (filter) => {
+        if(this.state.Amulette || this.state.Anneau || this.state.Bottes || this.state.Cape || this.state.Casque || this.state.Ceinture || this.state.Epaulettes || this.state.Plastron){
+            filter = filter + "&type="
+            if(this.state.Amulette) filter = filter + "Amulette,"
+            if(this.state.Anneau) filter = filter + "Anneau,"
+            if(this.state.Bottes) filter = filter + "Bottes,"
+            if(this.state.Cape) filter = filter + "Cape,"
+            if(this.state.Casque) filter = filter + "Casque,"
+            if(this.state.Ceinture) filter = filter + "Ceinture,"
+            if(this.state.Epaulettes) filter = filter + "Epaulettes,"
+            if(this.state.Plastron) filter = filter + "Plastron,"
+        }
+        return filter
+    }
+
+    buildFilter = () => {
+        let filter = ''
+        if(this.state.name !== ''){
+            filter = filter + ("&name="+this.state.name)
+        }
+        if(this.state.niv_min !== 0){
+            filter = filter + ("&niv_min="+this.state.niv_min)
+        }
+        if(this.state.niv_max !== 0){
+            filter = filter + ("&niv_max="+this.state.niv_max)
+        }
+        filter = this.buildFilterQuality(filter)
+        filter = this.buildFilterType(filter)
+
+        return filter
     }
 
     render() {

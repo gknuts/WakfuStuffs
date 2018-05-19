@@ -6,6 +6,7 @@ const initialState = {
     page: 1,
     size_page: 50,
     total: 0,
+    myFilter: '&',
 }
 
 export default function wakfu(state=initialState, action) {
@@ -26,8 +27,11 @@ export default function wakfu(state=initialState, action) {
                 ...state,
             page: action.value
             }
-        case types.FETCH_STUFFS_FILTERED:
-            return state
+        case types.CHANGE_FILTER:
+            return {
+                ...state,
+            myFilter: action.value
+            }
 
         default:
             return state
