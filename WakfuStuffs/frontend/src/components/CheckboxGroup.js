@@ -29,13 +29,15 @@ class CheckboxGroup extends Component {
     componentDidMount() {
         let table = []
         this.setState({values: this.props.value})
+        let cpt=0
         this.state.children.forEach((elm) =>{
             if(elm.type === Checkbox){
                 let checked = false
                 if(this.state.values.indexOf(elm.props.value) !== -1) checked=true
-                let temp =  <Checkbox key={elm.props.value} value={elm.props.value} checked={checked} onChange={this.onChangeGroup} label={elm.props.label}/>
+                let temp =  <Checkbox key={cpt} value={elm.props.value} checked={checked} onChange={this.onChangeGroup} label={elm.props.label} id={cpt}/>
                 table.push(temp)
                 this.setState({temp: table})
+                cpt+=1
             }else{
                 table.push(elm)
             }

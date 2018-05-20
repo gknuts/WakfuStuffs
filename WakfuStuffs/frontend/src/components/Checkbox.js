@@ -23,8 +23,8 @@ class Checkbox extends Component {
     render() {
         return(
             <div className="custom-control custom-checkbox">
-                <input type="checkbox" className="custom-control-input" id={this.props.values} value={this.props.value} checked={this.state.checked} onChange={this.handleChange}/>
-                <label className="custom-control-label" htmlFor={this.props.value}>{this.props.label}</label>
+                <input type="checkbox" className="custom-control-input" id={this.props.id} value={this.props.value} checked={this.state.checked} onChange={this.handleChange}/>
+                <label className="custom-control-label" htmlFor={this.props.id}>{this.props.label}</label>
             </div>
         )
     }

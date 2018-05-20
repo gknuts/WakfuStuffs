@@ -7,7 +7,7 @@ class TestCheckBox2 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            fruits: ["kiwi",]
+            fruits: ["Kiwi",]
         }
     }
 
@@ -17,7 +17,6 @@ class TestCheckBox2 extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        console.log(this.state.fruits)
     }
 
     render() {
