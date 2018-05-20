@@ -36,6 +36,7 @@ class SearchForm extends Component {
             MaitriseBerserk: false,
             MaitriseCritique: false,
             MaitriseDistance: false,
+            MaitriseZone: false,
             MaitriseDos: false,
             MaitriseMelee: false,
             MaitriseSoin: false,
@@ -123,6 +124,7 @@ class SearchForm extends Component {
             this.state.MaitriseBerserk ||
             this.state.MaitriseCritique ||
             this.state.MaitriseDistance ||
+            this.state.MaitriseZone ||
             this.state.MaitriseDos ||
             this.state.MaitriseMelee ||
             this.state.MaitriseSoin ||
@@ -183,6 +185,7 @@ class SearchForm extends Component {
                 if(this.state.MaitriseBerserk) filter = filter + "Maîtrise Berserk,"
                 if(this.state.MaitriseCritique) filter = filter + "Maîtrise Critique,"
                 if(this.state.MaitriseDistance) filter = filter + "Maîtrise Distance,"
+                if(this.state.MaitriseZone) filter = filter + "Maîtrise Zone,"
                 if(this.state.MaitriseDos) filter = filter + "Maîtrise Dos,"
                 if(this.state.MaitriseMelee) filter = filter + "Maîtrise Mêlée,"
                 if(this.state.MaitriseSoin) filter = filter + "Maîtrise Soin,"
@@ -336,6 +339,7 @@ class SearchForm extends Component {
                         <CustomInput type="checkbox" name="MaitriseBerserk" id="MaitriseBerserk" label="Maîtrise Berserk" value={this.state.MaitriseBerserk} onChange={this.handleChange}/>
                         <CustomInput type="checkbox" name="MaitriseCritique" id="MaitriseCritique" label="Maîtrise Critique" value={this.state.MaitriseCritique} onChange={this.handleChange}/>
                         <CustomInput type="checkbox" name="MaitriseDistance" id="MaitriseDistance" label="Maîtrise Distance" value={this.state.MaitriseDistance} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="MaitriseZone" id="MaitriseZone" label="Maîtrise Zone" value={this.state.MaitriseZone} onChange={this.handleChange}/>
                         <CustomInput type="checkbox" name="MaitriseDos" id="MaitriseDos" label="Maîtrise Dos" value={this.state.MaitriseDos} onChange={this.handleChange}/>
                         <CustomInput type="checkbox" name="MaitriseMono" id="MaitriseMono" label="Maîtrise Monocible" value={this.state.MaitriseMono} onChange={this.handleChange}/>
                         <CustomInput type="checkbox" name="MaitriseMelee" id="MaitriseMelee" label="Maîtrise Mêlée" value={this.state.MaitriseMelee} onChange={this.handleChange}/>
