@@ -33,6 +33,7 @@ class SearchForm extends Component {
             MaitriseEau: false,
             MaitriseFeu: false,
             MaitriseTerre: false,
+            MaitriseAlea: false,
             MaitriseBerserk: false,
             MaitriseCritique: false,
             MaitriseDistance: false,
@@ -121,6 +122,7 @@ class SearchForm extends Component {
             this.state.MaitriseEau ||
             this.state.MaitriseFeu ||
             this.state.MaitriseTerre ||
+            this.state.MaitriseAlea ||
             this.state.MaitriseBerserk ||
             this.state.MaitriseCritique ||
             this.state.MaitriseDistance ||
@@ -178,6 +180,11 @@ class SearchForm extends Component {
                 }
                 if(this.state.MaitriseTerre){
                     filter = filter + "Maîtrise Terre,"
+                    filter = filter + "_Maîtrise Élémentaire"
+                    filter = filter + "_Maîtrise sur X élément aléatoire"
+                    filter = filter + "_Maîtrise sur X éléments aléatoires,"
+                }
+                if(this.state.MaitriseAlea){
                     filter = filter + "_Maîtrise Élémentaire"
                     filter = filter + "_Maîtrise sur X élément aléatoire"
                     filter = filter + "_Maîtrise sur X éléments aléatoires,"
@@ -336,6 +343,7 @@ class SearchForm extends Component {
                         <CustomInput type="checkbox" name="MaitriseEau" id="MaitriseEau" label="Maîtrise Eau" value={this.state.MaitriseEau} onChange={this.handleChange}/>
                         <CustomInput type="checkbox" name="MaitriseFeu" id="MaitriseFeu" label="Maîtrise Feu" value={this.state.MaitriseFeu} onChange={this.handleChange}/>
                         <CustomInput type="checkbox" name="MaitriseTerre" id="MaitriseTerre" label="Maîtrise Terre" value={this.state.MaitriseTerre} onChange={this.handleChange}/>
+                        <CustomInput type="checkbox" name="MaitriseAlea" id="MaitriseAlea" label="Maîtrise sur X éléments aléatoires" value={this.state.MaitriseAlea} onChange={this.handleChange}/>
                         <CustomInput type="checkbox" name="MaitriseBerserk" id="MaitriseBerserk" label="Maîtrise Berserk" value={this.state.MaitriseBerserk} onChange={this.handleChange}/>
                         <CustomInput type="checkbox" name="MaitriseCritique" id="MaitriseCritique" label="Maîtrise Critique" value={this.state.MaitriseCritique} onChange={this.handleChange}/>
                         <CustomInput type="checkbox" name="MaitriseDistance" id="MaitriseDistance" label="Maîtrise Distance" value={this.state.MaitriseDistance} onChange={this.handleChange}/>
