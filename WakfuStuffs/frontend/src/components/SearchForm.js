@@ -83,6 +83,7 @@ class SearchForm extends Component {
         event.preventDefault()
         let filter = this.buildFilter()
         this.props.actions.changeFilter(filter)
+        window.scrollTo(0, 0)
     }
 
     buildFilterQuality = (filter) => {
@@ -379,8 +380,8 @@ class SearchForm extends Component {
                         <CustomInput type="checkbox" name="Tacle" id="Tacle" label="Tacle" value={this.state.Tacle} onChange={this.handleChange}/>
                         <CustomInput type="checkbox" name="Volonte" id="Volonte" label="Volonté" value={this.state.Volonte} onChange={this.handleChange}/>
                         </div>
-                    </FormGroup>
-                    <Button>Submit</Button>
+                    </FormGroup><br/>
+                    <div align="center"><Button>Filtrer</Button></div>
                 </Form>
             </div>
         )
