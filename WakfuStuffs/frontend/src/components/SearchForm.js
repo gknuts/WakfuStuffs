@@ -71,6 +71,9 @@ class SearchForm extends Component {
         let target = event.target;
         let name = target.name;
         let value = target.type === 'checkbox' ? target.checked : target.value;
+        if(name === "niv_min"){
+            if(value === '') value=0
+        }
         this.setState({
           [name]: value
         });
