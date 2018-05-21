@@ -199,11 +199,11 @@ class SearchForm extends Component {
                                 <Checkbox value="Maîtrise Monocible" label="Maîtrise Monocible"/>
                                 <Checkbox value="Maîtrise Mêlée" label="Maîtrise Mêlée"/>
                                 <Checkbox value="Maîtrise Soin" label="Maîtrise Soin"/>
-                                <Checkbox value="Niveau aux sorts Air" label="Niveau aux sorts Air"/>
-                                <Checkbox value="Niveau aux sorts Eau" label="Niveau aux sorts Eau"/>
-                                <Checkbox value="Niveau aux sorts Feu" label="Niveau aux sorts Feu"/>
-                                <Checkbox value="Niveau aux sorts Terre" label="Niveau aux sorts Terre"/>
-                                <Checkbox value="Niveau aux sorts Élémentaire" label="Niveau aux sorts Élémentaire"/>
+                                <Checkbox value="Niv. aux sorts Air" label="Niveau aux sorts Air"/>
+                                <Checkbox value="Niv. aux sorts Eau" label="Niveau aux sorts Eau"/>
+                                <Checkbox value="Niv. aux sorts Feu" label="Niveau aux sorts Feu"/>
+                                <Checkbox value="Niv. aux sorts Terre" label="Niveau aux sorts Terre"/>
+                                <Checkbox value="Niv. aux sorts élémentaires" label="Niveau aux sorts Élémentaire"/>
                                 <Checkbox value="_PA_PA max" label="PA"/>
                                 <Checkbox value="_PM_PM max" label="PM"/>
                                 <Checkbox value="_PW_PW max" label="PW"/>
@@ -217,6 +217,7 @@ class SearchForm extends Component {
                                 <Checkbox value="Résistance Feu" label="Résistance Feu"/>
                                 <Checkbox value="Résistance Terre" label="Résistance Terre"/>
                                 <Checkbox value="Résistance Critique" label="Résistance Critique"/>
+                                <Checkbox value="_Résistance sur 1 élément aléatoire_Résistance sur 2 éléments aléatoires_Résistance sur 3 éléments aléatoires" label="Résistance sur X éléments aléatoires"/>
                                 <Checkbox value="Résistance Dos" label="Résistance Dos"/>
                                 <Checkbox value="Sagesse" label="Sagesse"/>
                                 <Checkbox value="Tacle" label="Tacle"/>
