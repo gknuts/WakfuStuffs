@@ -136,4 +136,4 @@ WEBPACK_LOADER = {
         }
 }
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'greenlamp.be']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'greenlamp.be', '46.105.123.34']
