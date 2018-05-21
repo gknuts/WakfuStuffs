@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
 import {connect} from 'react-redux';
 
-class Page extends Component{
+export class Page extends Component{
     constructor(props) {
         super(props);
         this.state = {"pages": [], "left": -1, "right": -1, "max": 10}
