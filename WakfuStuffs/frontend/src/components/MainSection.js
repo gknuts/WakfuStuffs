@@ -1,6 +1,5 @@
 import React from 'react';
 import Search from './Search'
-import TestCheckBox2 from './TestCheckBox2'
 
 const MainSection = ({stuffs, actions, page, total, size_page, myFilter}) =>(
       <div>

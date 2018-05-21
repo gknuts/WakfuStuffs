@@ -43,38 +43,51 @@ class DisplayStuffs extends Component{
    }
 
     render() {
-        return (
-          <div>
-            <div id="App">
-                <DisplayJson {...this.props}/>
-                    Nb résultat: {this.props.total}
-                    <Table hover>
-                    <thead>
-                      <tr>
-                        <th>#</th>
-                        <th>Nom</th>
-                        <th>Qualité</th>
-                        <th>Type</th>
-                        <th>Niveau</th>
-                        <th>Bonus</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                    {this.props.stuffs.map((elm, key) =>
-                        <tr key={key}>
-                            <th scope="row"><img src={this.get_image(elm.id_image)} alt={elm.name} height="50"/></th>
-                            <td>{elm.name}</td>
-                            <td>{elm.quality}</td>
-                            <td>{elm.type}</td>
-                            <td>{elm.niveau}</td>
-                            <td>{this.getBonuses(elm.bonus, elm.id)}</td>
-                        </tr>
-                    )}
-                    </tbody>
-                    </Table>
-            </div>
-          </div>
-        )
+        if(this.props.total === 0){
+            return (
+                <div>
+                    <div id="App">
+                        <DisplayJson {...this.props}/>
+                        Nb résultat: {this.props.total}
+                        <h3>Aucun élément correspondant à votre recherche n'a pu être trouvé. Veuillez diminuer le nombre de filtres.</h3>
+                    </div>
+                </div>
+            )
+        }else {
+            return (
+                <div>
+                    <div id="App">
+                        <DisplayJson {...this.props}/>
+                        Nb résultat: {this.props.total}
+                        <Table hover>
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Nom</th>
+                                <th>Qualité</th>
+                                <th>Type</th>
+                                <th>Niveau</th>
+                                <th>Bonus</th>
+                            </tr>
+                            </thead>
+                            <tbody >
+                            {this.props.stuffs.map((elm, key) =>
+                                <tr key={key}>
+                                    <th scope="row"><img src={this.get_image(elm.id_image)} alt={elm.name} height="50"/>
+                                    </th>
+                                    <td>{elm.name}</td>
+                                    <td>{elm.quality}</td>
+                                    <td>{elm.type}</td>
+                                    <td>{elm.niveau}</td>
+                                    <td style={{fontSize: '12px'}}>{this.getBonuses(elm.bonus, elm.id)}</td>
+                                </tr>
+                            )}
+                            </tbody>
+                        </Table>
+                    </div>
+                </div>
+            )
+        }
     }
 }
 

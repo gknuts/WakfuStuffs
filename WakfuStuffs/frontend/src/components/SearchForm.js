@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import {Form, FormGroup, Label, Input, Button, CustomInput} from "reactstrap";
+import {Form, FormGroup, Label, Input, Button, Collapse} from "reactstrap";
 import CheckboxGroup from "./CustomCheckbox/CheckboxGroup";
 import Checkbox from "./CustomCheckbox/Checkbox";
-import DisplayJson from "./Utils/DisplayJson";
 
 
 class SearchForm extends Component {
@@ -15,7 +14,12 @@ class SearchForm extends Component {
 
             qualities: [],
             types: [],
-            bonuses: []
+            bonuses: [],
+
+            collapseNiv: false,
+            collapseType: false,
+            collapseQuality: false,
+            collapseBonus: false,
         };
     }
 
@@ -98,6 +102,24 @@ class SearchForm extends Component {
         return filter
     }
 
+
+
+    toggleNiv = () => {
+        this.setState({ collapseNiv: !this.state.collapseNiv });
+    }
+
+    toggleQuality = () => {
+        this.setState({ collapseQuality: !this.state.collapseQuality });
+    }
+
+    toggleType = () => {
+        this.setState({ collapseType: !this.state.collapseType });
+    }
+
+    toggleBonus = () => {
+        this.setState({ collapseBonus: !this.state.collapseBonus });
+    }
+
     render() {
         return(
             <div>
@@ -106,6 +128,8 @@ class SearchForm extends Component {
                         <Label for="name"><b>Nom</b></Label>
                         <Input type="text" name="name" id="name" value={this.state.name} onChange={this.handleChange} placeholder="Filtrer" />
                     </FormGroup>
+                    <Button color="warning" onClick={this.toggleNiv} style={{ marginBottom: '1rem' }}>Par Niveaux</Button><br/>
+                    <Collapse isOpen={this.state.collapseNiv}>
                     <FormGroup>
                         <Label for="niv_min"><b>De</b></Label>
                         <Input type="text" name="niv_min" id="niv_min" value={this.state.niv_min} onChange={this.handleChange} />
@@ -114,6 +138,9 @@ class SearchForm extends Component {
                         <Label for="niv_max"><b>à</b></Label>
                         <Input type="text" name="niv_max" id="niv_max" value={this.state.niv_max} onChange={this.handleChange} />
                     </FormGroup>
+                    </Collapse>
+                    <Button color="warning" onClick={this.toggleQuality} style={{ marginBottom: '1rem' }}>Par Rareté</Button><br/>
+                    <Collapse isOpen={this.state.collapseQuality}>
                     <FormGroup check>
                         <Label><b>Rareté</b></Label><br/>
                         <div>
@@ -128,6 +155,9 @@ class SearchForm extends Component {
                             </CheckboxGroup>
                         </div>
                     </FormGroup>
+                    </Collapse>
+                    <Button color="warning" onClick={this.toggleType} style={{ marginBottom: '1rem' }}>Par Type</Button><br/>
+                    <Collapse isOpen={this.state.collapseType}>
                     <FormGroup check>
                         <Label><b>Type</b></Label><br/>
                         <div>
@@ -143,6 +173,9 @@ class SearchForm extends Component {
                             </CheckboxGroup>
                         </div>
                     </FormGroup>
+                    </Collapse>
+                    <Button color="warning" onClick={this.toggleBonus} style={{ marginBottom: '1rem' }}>Par Bonus</Button><br/>
+                    <Collapse isOpen={this.state.collapseBonus}>
                     <FormGroup check>
                         <Label><b>Bonus</b></Label><br/>
                         <div>
@@ -190,7 +223,8 @@ class SearchForm extends Component {
                                 <Checkbox value="Volonté" label="Volonté"/>
                             </CheckboxGroup>
                         </div>
-                    </FormGroup><br/>
+                    </FormGroup>
+                    </Collapse><br/>
                     <div align="center"><Button>Filtrer</Button></div>
                 </Form>
             </div>
