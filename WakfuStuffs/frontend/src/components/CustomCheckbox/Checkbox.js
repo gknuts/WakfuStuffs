@@ -13,7 +13,6 @@ class Checkbox extends Component {
     handleChange = (event) => {
         let target = event.target;
         let value = target.checked
-        console.log(target.value)
         this.setState({
           checked: value
         });

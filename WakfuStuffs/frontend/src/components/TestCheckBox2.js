@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import CheckboxGroup from "./CheckboxGroup";
-import Checkbox from "./Checkbox";
+import CheckboxGroup from "./CustomCheckbox/CheckboxGroup";
+import Checkbox from "./CustomCheckbox/Checkbox";
 
 
 class TestCheckBox2 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            fruits: ["Kiwi",]
+            fruits: []
         }
     }
 
@@ -17,6 +17,7 @@ class TestCheckBox2 extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
+        console.log(this.state.fruits)
     }
 
     render() {

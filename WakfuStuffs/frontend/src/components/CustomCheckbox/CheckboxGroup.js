@@ -34,7 +34,7 @@ class CheckboxGroup extends Component {
             if(elm.type === Checkbox){
                 let checked = false
                 if(this.state.values.indexOf(elm.props.value) !== -1) checked=true
-                let temp =  <Checkbox key={cpt} value={elm.props.value} checked={checked} onChange={this.onChangeGroup} label={elm.props.label} id={cpt}/>
+                let temp =  <Checkbox key={cpt} value={elm.props.value} checked={checked} onChange={this.onChangeGroup} label={elm.props.label} id={elm.props.value}/>
                 table.push(temp)
                 this.setState({temp: table})
                 cpt+=1
@@ -46,9 +46,9 @@ class CheckboxGroup extends Component {
 
     render() {
         return(
-            <React.Fragment>
+            <div className={this.props.name}>
                 {this.state.temp}
-            </React.Fragment>
+            </div>
         )
     }
 }

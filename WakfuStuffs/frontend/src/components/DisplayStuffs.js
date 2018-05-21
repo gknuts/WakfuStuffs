@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import DisplayJson from "./DisplayJson";
+import DisplayJson from "./Utils/DisplayJson";
 import { Table } from 'reactstrap';
 
 class DisplayStuffs extends Component{

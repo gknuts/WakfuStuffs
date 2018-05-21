@@ -22,9 +22,7 @@ class Filtered(APIView):
 
     def get(self, request, format=None):
         items = Stuff.objects.all()
-        param = request.query_params
         paginator = LargeResultsSetPagination()
-        results = []
         if('name' in request.query_params and request.query_params['name'] is not None):
             name = request.query_params['name']
             items = items.filter(name=name)
@@ -44,20 +42,19 @@ class Filtered(APIView):
             items = items.filter(type__in=type)
         if('tags' in request.query_params and request.query_params['tags'] is not None):
             tags = request.query_params['tags']
-            print(tags)
             tags = [str(tags) for tags in tags.split(",")]
             for tag in tags:
                 if(tag != ''):
                     elms = [str(elm) for elm in tag.split("_")]
+                    if '' in elms:
+                        elms.remove('')
                     if(len(elms)>1):
                         tags_result = Tag.objects.all().filter(name__in=elms)
                         items = items.filter(tags__in=tags_result)
                     else:
                         tags_result = Tag.objects.all().filter(name=tag)
                         items = items.filter(tags__in=tags_result)
-
         context = paginator.paginate_queryset(items.order_by("niveau"), request)
         serial = self.serializer_class(context, many=True)
         res_pag = paginator.get_paginated_response(serial.data)
-
         return res_pag

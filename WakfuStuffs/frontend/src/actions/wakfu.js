@@ -15,7 +15,7 @@ export const fetchStuffs = () => {
 }
 
 export const fetchStuffsLimits = (page, size, myFilter) => {
-    let url = "/api/filtered/?page_size="+size+"&page="+page+myFilter
+  let url = "/api/filtered/?page_size="+size+"&page="+page+myFilter
     console.log(url)
   return dispatch => {
     let headers = {"Content-Type": "application/json"};
