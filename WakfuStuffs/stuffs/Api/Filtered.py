@@ -25,7 +25,7 @@ class Filtered(APIView):
         paginator = LargeResultsSetPagination()
         if('name' in request.query_params and request.query_params['name'] is not None):
             name = request.query_params['name']
-            items = items.filter(name=name)
+            items = items.filter(name__contains=name)
         if('quality' in request.query_params and request.query_params['quality'] is not None):
             qualities = request.query_params['quality']
             qualities = [str(quality) for quality in qualities.split(",")]

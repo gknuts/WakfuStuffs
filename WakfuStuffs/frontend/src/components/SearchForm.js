@@ -24,15 +24,35 @@ class SearchForm extends Component {
     }
 
     handleChangeQuality = (value) => {
-        this.setState({qualities: value})
+        this.setState({qualities: value}, this.refreshFilter)
     }
 
     handleChangeType = (value) => {
-        this.setState({types: value})
+        this.setState({types: value}, this.refreshFilter)
     }
 
     handleChangeBonus = (value) => {
-        this.setState({bonuses: value})
+        this.setState({
+            bonuses: value
+        }, this.refreshFilter)
+    }
+
+    handleChangeName = (event) => {
+        let target = event.target;
+        let name = target.name;
+        let value = target.type === 'checkbox' ? target.checked : target.value;
+        if(name === "niv_min"){
+            if(value === '') value=0
+        }
+        this.setState({
+          [name]: value
+        }, this.refreshFilter)
+    }
+
+    refreshFilter = () => {
+        console.log("refreshFilter")
+        let filter = this.buildFilter()
+        this.props.actions.changeFilter(filter)
     }
 
     handleChange = (event) => {
@@ -44,7 +64,7 @@ class SearchForm extends Component {
         }
         this.setState({
           [name]: value
-        });
+        }, this.refreshFilter)
     }
 
     handleSubmit = (event) =>{
@@ -226,7 +246,6 @@ class SearchForm extends Component {
                         </div>
                     </FormGroup>
                     </Collapse><br/>
-                    <div align="center"><Button>Filtrer</Button></div>
                 </Form>
             </div>
         )
