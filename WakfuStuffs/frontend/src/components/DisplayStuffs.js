@@ -75,7 +75,7 @@ class DisplayStuffs extends Component{
                                 <tr key={key}>
                                     <th scope="row"><img src={this.get_image(elm.id_image)} alt={elm.name} height="50"/>
                                     </th>
-                                    <td>{elm.name}</td>
+                                    <td><a href={elm.url} target="_blank">{elm.name}</a></td>
                                     <td>{elm.quality}</td>
                                     <td>{elm.type}</td>
                                     <td>{elm.niveau}</td>

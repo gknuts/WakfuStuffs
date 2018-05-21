@@ -37,9 +37,9 @@ def get_items(source, cpt):
     table = table.find("tbody")
     trs = table.find_all("tr")
     for tr in trs:
-        print("{:d}/4584".format(cpt.cpt))
         item = Item()
         linker = tr.find_all("span", attrs={"class": u"ak-linker"})
+        item.url = "https://www.wakfu.com" + linker[0].a.get("href")
         item.id_image = linker[0].img.get("src").split("/")[-1].split(".")[0]
         for link in linker:
             name = link.text
@@ -105,7 +105,7 @@ def main():
         print(requete.reason)
         cpt+=1
 
-def main2():
+def main1():
     for i in range(27, 72):
         delete_item(i)
 

@@ -27,6 +27,7 @@ class AddStuff(APIView):
             temp["type"] = data[3]
             temp["niveau"] = int(data[4])
             temp["bonus"] = data[5]
+            temp["url"] = data[7]
             temp["tags"] = []
             if data[6] != "":
                 elms = data[6].split(";")

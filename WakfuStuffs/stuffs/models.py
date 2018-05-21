@@ -9,6 +9,7 @@ class Stuff(models.Model):
     niveau = models.CharField(max_length=255)
     niveau = models.IntegerField()
     bonus = models.CharField(max_length=2500, blank=True)
+    url = models.CharField(max_length=255, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

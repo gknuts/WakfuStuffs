@@ -4,7 +4,7 @@ from WakfuStuffs.WakfuStuffs.import_items.Tag import Tag
 
 
 class Item:
-    def __init__(self, id_image="", name="", quality="", type="", niveau=0):
+    def __init__(self, id_image="", name="", quality="", type="", niveau=0, url=""):
         self.id_image = id_image
         self.name = name
         self.quality = quality
@@ -12,9 +12,10 @@ class Item:
         self.bonus = []
         self.niveau = niveau
         self.tags = []
+        self.url = url
 
     def print(self):
-        print("{:s}: {:s} - {:s} - {:s} - {:d} - {:s} - {:s}".format(self.id_image, self.name, self.quality, self.type, self.niveau, "".join(self.bonus), "".join(self.tag)))
+        print("{:s}: {:s} - {:s} - {:s} - {:d} - {:s} - {:s} - {:s}".format(self.id_image, self.name, self.quality, self.type, self.niveau, "".join(self.bonus), "".join(self.tag), self.url))
 
     def bonusToTag(self, bonus):
         cutted = " ".join(bonus.split(" ")[1:])
@@ -38,7 +39,7 @@ class Item:
         payload["count"] = len(items)
         cpt = 0
         for item in items:
-            temp = [item.id_image, item.name, item.quality, item.type, item.niveau, ";".join(item.bonus), ";".join(item.tags)]
+            temp = [item.id_image, item.name, item.quality, item.type, item.niveau, ";".join(item.bonus), ";".join(item.tags), item.url]
             payload[str(cpt)] = temp
             cpt += 1
         return payload

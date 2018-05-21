@@ -12,7 +12,7 @@ class StuffSerializer(serializers.ModelSerializer):
     tags = TagSerializer(many=True)
     class Meta:
         model = Stuff
-        fields = ('id', 'id_image', 'name', 'quality', 'type', 'niveau', 'bonus', 'tags',)
+        fields = ('id', 'id_image', 'name', 'quality', 'type', 'niveau', 'bonus', 'tags', 'url')
 
     def create(self, validated_data):
         tags_data = validated_data.pop('tags')
