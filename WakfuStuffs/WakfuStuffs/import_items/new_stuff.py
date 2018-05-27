@@ -9,11 +9,11 @@ from WakfuStuffs.WakfuStuffs.import_items.Cpt import Cpt
 from WakfuStuffs.WakfuStuffs.import_items.Item import Item
 
 
-def get_all_sources(number):
+def get_all_sources(number, dest):
     sources = []
     for i in range(0, number):
         print("{:d}/191".format(i+1))
-        filename= "source/{:d}.html".format(i+1)
+        filename= "{:s}/{:d}.html".format(dest, i+1)
         with open(filename, 'r', encoding='utf-8') as input:
             source = input.readlines()
             sources.append(BeautifulSoup(''.join(source), "lxml"))
@@ -88,7 +88,7 @@ def split_list(alist, wanted_items=160):
 
 
 def main():
-    sources = get_all_sources(191)
+    sources = get_all_sources(191, "source")
     print(len(sources))
     all_items = []
     cpt = Cpt()
@@ -149,6 +149,34 @@ def main6():
         if(cpt%50 ==0):
             print(cpt)
 
+def main7():
+    nb_page = 48
+    url_base = "https://www.wakfu.com/fr/mmorpg/encyclopedie/armes?page="
+    folder = "source_weapons/"
+    for i in range(1, nb_page+1):
+        print(i)
+        url = url_base + str(i)
+        folder_target = folder + str(i) + ".html"
+        os.system("wget -O {0} {1} -q --no-check-certificate".format(folder_target, url))
+
+def main8():
+    sources = get_all_sources(48, "source_weapons")
+    all_items = []
+    cpt = Cpt()
+    for source in sources:
+        items = get_items(source, cpt)
+        all_items = all_items + items
+    print(len(all_items))
+    tabs = split_list(all_items, 160)
+
+    cpt=0
+    for tab in tabs:
+        print("{:d}/{:d}".format(cpt, len(tabs)))
+        payload = Item.getPayload(tab)
+        requete = requests.post("http://localhost:8000/api/weapons/addWeapon/", data=payload)
+        print(requete.reason)
+        cpt+=1
 
 
-main()
+
+main8()

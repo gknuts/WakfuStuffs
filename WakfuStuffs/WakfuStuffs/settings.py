@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'stuffs.apps.StuffsConfig',
+    'weapons.apps.WeaponsConfig',
     'webpack_loader',
     'rest_framework',
 ]
