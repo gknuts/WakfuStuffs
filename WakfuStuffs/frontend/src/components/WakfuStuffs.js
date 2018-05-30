@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, {Component, Fragment} from 'react';
 import MainSection from '../containers/MainSection'
+import ModelDialog from './ModelDialog'
 
 
 class WakfuStuffs extends Component {
@@ -15,7 +16,12 @@ class WakfuStuffs extends Component {
         const { width, height } = this.state;
         const isMobile = (width <= 500 ||height <= 500);
         // the rest is the same...
-        return(<MainSection mobile={isMobile}/>)
+        return(
+            <Fragment>
+                <ModelDialog>Coucou ceci est une fenêtre modale</ModelDialog>
+                <MainSection mobile={isMobile}/>
+            </Fragment>
+        )
     }
 }
 

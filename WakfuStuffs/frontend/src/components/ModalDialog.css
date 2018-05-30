@@ -1,0 +1,27 @@
+.c-dialog{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    padding: 2.4rem;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    background-color: rgba(255, 255, 255, .75);
+    transition: .2s;
+
+}
+
+.c-dialog__box{
+    flex:1;
+    background-color: white;
+    max-width: 48rem;
+    margin: auto;
+    padding: 2.4rem;
+}
+.c-dialog[aria-hidden="true"]{
+    visibility: hidden;
+    opacity: 0;
+}

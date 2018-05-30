@@ -20,6 +20,11 @@ const Search = ({stuffs, actions, page, total, size_page, myFilter, mobile}) => 
             <div className="wrap">
                 <div className="fleft">
                     <Page page={page} size_page={size_page} actions={actions} total={total}/>
+                  <button
+                    type="button"
+                    aria-haspopup="dialog"
+                    aria-controls="dialog">Ouvrir ma fenêtre modale
+                  </button>
                     <DisplayStuffs stuffs={stuffs} actions={actions} page={page} size_page={size_page} total={total}
                                    myFilter={myFilter}/>
                     <Page page={page} size_page={size_page} actions={actions} total={total}/>
