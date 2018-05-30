@@ -116,4 +116,6 @@ build/
 bundles/
 .idea/dataSources.local.xml
 .idea/workspace.xml
-./idea/*
+.idea/*
+
+.idea/
