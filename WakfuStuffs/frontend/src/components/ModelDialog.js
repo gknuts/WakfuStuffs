@@ -74,6 +74,13 @@ class ModelDialog extends Component{
 
     }
 
+    //
+    //  <button
+    //    type="button"
+    //    aria-haspopup="dialog"
+    //    aria-controls="dialog">Ouvrir ma fenêtre modale
+    //  </button>
+
     render() {
         return(
             <Fragment>

@@ -18,7 +18,6 @@ class WakfuStuffs extends Component {
         // the rest is the same...
         return(
             <Fragment>
-                <ModelDialog>Coucou ceci est une fenêtre modale</ModelDialog>
                 <MainSection mobile={isMobile}/>
             </Fragment>
         )
