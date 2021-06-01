@@ -9,4 +9,4 @@ idna==2.6
 optional-django==0.1.0
 pytz==2017.2
 requests==2.18.4
-urllib3==1.22
+urllib3==1.26.5
